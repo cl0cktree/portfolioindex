@@ -2,7 +2,7 @@ $(function(){
 	/*loader 제어*/
 
 	$(document).ready(function(){
-		$('.body-filter-preloader').load('http://clocktree.dothome.co.kr/portfolioindex/cover/cover.html .filter-preloader-loadingbox',function(){
+		$('.body-filter-preloader').load('https://cl0cktree.github.io/portfolioindex/cover/cover.html .filter-preloader-loadingbox',function(){
 			$('.body-filter-preloader').hide();
 			var msheight = $('.slide img').height();
 			$('#slide-wrap').css({'height':msheight});
@@ -23,7 +23,7 @@ $(function(){
 	var scib3;
 
 	$('body').ready(function(){
-		$('.body-section-all').load('http://clocktree.dothome.co.kr/portfolioindex/cover/cover.html .section-num1-article',function(){
+		$('.body-section-all').load('https://cl0cktree.github.io/portfolioindex/cover/cover.html .section-num1-article',function(){
 			/*ie9에서 탑메뉴 이동 후 동작*/
 
 
@@ -55,7 +55,7 @@ $(function(){
 				$('.body-all-header').stop().animate({'height':'100px'},100)
 				$('.article1-nav1-toplogo').stop().animate({'height':'100px'},100)
 			}
-			if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html')
+			if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
 			{
 				$('#slide-wrap').css({'display':'none'})
 				$('#slide-wrap-i').css({'display':'block'})
@@ -63,7 +63,7 @@ $(function(){
 				$('#topmenu1-list-span1').css({'border-bottom':'3px solid #bbb'})
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span1').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
 			{
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
@@ -71,7 +71,7 @@ $(function(){
 				$('#topmenu1-list-span2').css({'border-bottom':'3px solid #bbb'})
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span2').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
 			{
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
@@ -79,7 +79,7 @@ $(function(){
 				$('#topmenu1-list-span3').css({'border-bottom':'3px solid #bbb'})
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span3').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
 			{
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
@@ -87,7 +87,7 @@ $(function(){
 				$('#topmenu1-list-span4').css({'border-bottom':'3px solid #bbb'})
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span4').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
 			{
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
@@ -95,7 +95,7 @@ $(function(){
 				$('#topmenu1-list-span5').css({'border-bottom':'3px solid #bbb'})
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('#topmenu1-list-span5').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'-3px','border-bottom':'3px solid #bbb'})
-			}else if ((location.href=='http://clocktree.dothome.co.kr/portfolioindex/index.html')||(location.href=='http://clocktree.dothome.co.kr/portfolioindex/')||(location.href=='http://clocktree.dothome.co.kr/portfolioindex'))
+			}else if ((location.href=='https://cl0cktree.github.io/portfolioindex/index.html')||(location.href=='https://cl0cktree.github.io/portfolioindex/')||(location.href=='https://cl0cktree.github.io/portfolioindex'))
 			{
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
@@ -104,38 +104,38 @@ $(function(){
 				$('#landing-contents-title, #landing-contents-buttonwrap').stop().animate({'text-indent':'0'},500)
 			}
 		})
-		$('footer').load('http://clocktree.dothome.co.kr/portfolioindex/cover/cover.html .body-footer-contaner',function(){
-			if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html')
+		$('footer').load('https://cl0cktree.github.io/portfolioindex/cover/cover.html .body-footer-contaner',function(){
+			if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
 			{
 				$('.ul-li-img1').css({'border':'0px solid #999'})
 				$('#list-ul-li1').css({'border':'3px solid #999'})
 				$('#slide-wrap').css({'display':'none'})
 				$('#slide-wrap-i').css({'display':'block'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
 			{
 				$('.ul-li-img1').css({'border':'0px solid #999'})
 				$('#list-ul-li2').css({'border':'3px solid #999'})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
 			{
 				$('.ul-li-img1').css({'border':'0px solid #999'})
 				$('#list-ul-li3').css({'border':'3px solid #999'})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
 			{
 				$('.ul-li-img1').css({'border':'0px solid #999'})
 				$('#list-ul-li4').css({'border':'3px solid #999'})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
 			{
 				$('.ul-li-img1').css({'border':'0px solid #999'})
 				$('#list-ul-li5').css({'border':'3px solid #999'})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
-			}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/index.html')
+			}else if (location.href=='https://cl0cktree.github.io/portfolioindex/index.html')
 			{
 				$('.topmenu1-list-span').css({'border-bottom':'0px solid #fff'})
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -239,15 +239,15 @@ $(function(){
 			if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" )>-1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 			{
 				$('.body-filter-preloader').show();
-				$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .main-welcolme-summon',function(){
+				$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/index.html .main-welcolme-summon',function(){
 					$('.topmenu1-list-span').css({'border-bottom':'0px solid #fff'})
 					$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 					$('.ul-li-img1').css({'border':'0px solid #999'})
 				})
 				$('#slide-wrap').css({'display':'block'})
 				$('#slide-wrap-i').css({'display':'none'})
-				$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .article-main-scrollall')
-				$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .index-btn-wrap')
+				$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/index.html .article-main-scrollall')
+				$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/index.html .index-btn-wrap')
 
 				var topbtnm
 				if ($('.body-all-header').css('height')=='50px')
@@ -266,23 +266,23 @@ $(function(){
 				$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 				$('.body-filter-preloader').hide();
-				history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/index.html')
+				history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/index.html')
 
 			}else{
-				location.href='http://clocktree.dothome.co.kr/portfolioindex/index.html'
+				location.href='https://cl0cktree.github.io/portfolioindex/index.html'
 			}
 
 		}else{
 			$('.body-filter-preloader').show();
-			$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .main-welcolme-summon',function(){
+			$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/index.html .main-welcolme-summon',function(){
 				$('.topmenu1-list-span').css({'border-bottom':'0px solid #fff'})
 				$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 				$('.ul-li-img1').css({'border':'0px solid #999'})
 			})
 			$('#slide-wrap').css({'display':'block'})
 			$('#slide-wrap-i').css({'display':'none'})
-			$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .article-main-scrollall')
-			$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .index-btn-wrap')
+			$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/index.html .article-main-scrollall')
+			$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/index.html .index-btn-wrap')
 
 			var topbtnm
 			if ($('.body-all-header').css('height')=='50px')
@@ -301,7 +301,7 @@ $(function(){
 			$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 			$('.body-filter-preloader').hide();
-			history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/index.html')
+			history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/index.html')
 
 		}
 
@@ -378,7 +378,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span1').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -388,8 +388,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'none'})
 						$('#slide-wrap-i').css({'display':'block'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -408,16 +408,16 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub1.html'
 
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span1').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -427,8 +427,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'none'})
 					$('#slide-wrap-i').css({'display':'block'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -447,7 +447,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
 
 				}
 
@@ -458,7 +458,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span2').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -468,8 +468,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -488,15 +488,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub2.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 						$('#topmenu1-list-span2').css({'border-bottom':'3px solid #bbb'})
 						$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -506,8 +506,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -526,7 +526,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
 
 				}
 
@@ -538,7 +538,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span3').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -548,8 +548,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -568,15 +568,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub3.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span3').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -586,8 +586,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -606,7 +606,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
 
 				}
 
@@ -617,7 +617,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span4').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -627,8 +627,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -647,15 +647,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub4.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span4').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -663,8 +663,8 @@ $(function(){
 							$('.ul-li-img1').css({'border':'0px solid #999'})
 							$('#list-ul-li4').css({'border':'3px solid #999'})
 					})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -683,7 +683,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
 
 				}
 
@@ -694,7 +694,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span5').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -704,8 +704,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -724,15 +724,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub5.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span5').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -742,8 +742,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -762,7 +762,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
 
 				}
 
@@ -807,7 +807,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span1').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -817,8 +817,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'none'})
 						$('#slide-wrap-i').css({'display':'block'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -837,15 +837,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub1.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span1').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -855,8 +855,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'none'})
 					$('#slide-wrap-i').css({'display':'block'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -875,7 +875,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
 
 				}
 
@@ -887,7 +887,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span2').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -897,8 +897,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -917,15 +917,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub2.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span2').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -935,8 +935,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -955,7 +955,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
 
 				}
 
@@ -967,7 +967,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span3').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -977,8 +977,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -997,15 +997,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub3.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span3').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1015,8 +1015,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -1035,7 +1035,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
 
 				}
 
@@ -1046,7 +1046,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span4').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1056,8 +1056,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -1076,15 +1076,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub4.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span4').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1094,8 +1094,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -1114,7 +1114,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
 
 				}
 
@@ -1125,7 +1125,7 @@ $(function(){
 					if ((navigator.userAgent.search( "edge/")>-1)||(navigator.userAgent.search( "trident" ) > -1)||(navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1))
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .main-welcolme-summon',function(){
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .main-welcolme-summon',function(){
 							$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span5').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1135,8 +1135,8 @@ $(function(){
 						})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .index-btn-wrap')
 
 						var topbtnm
 						if ($('.body-all-header').css('height')=='50px')
@@ -1155,15 +1155,15 @@ $(function(){
 						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 						$('.body-filter-preloader').hide();
-						history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html')
+						history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
 
 					}else{
-						location.href='http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html'
+						location.href='https://cl0cktree.github.io/portfolioindex/sub/sub5.html'
 					}
 
 				}else{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .main-welcolme-summon',function(){
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .main-welcolme-summon',function(){
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 							$('#topmenu1-list-span5').css({'border-bottom':'3px solid #bbb'})
 							$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1173,8 +1173,8 @@ $(function(){
 					})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .index-btn-wrap')
 
 					var topbtnm
 					if ($('.body-all-header').css('height')=='50px')
@@ -1193,7 +1193,7 @@ $(function(){
 					$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 					$('.body-filter-preloader').hide();
-					history.pushState(null,null,'http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html')
+					history.pushState(null,null,'https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
 
 				}
 
@@ -1210,21 +1210,21 @@ $(function(){
 			{
 				$(window).on('popstate',function(event){
 
-					if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/index.html')
+					if (location.href=='https://cl0cktree.github.io/portfolioindex/index.html')
 					{
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .main-welcolme-summon')
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/index.html .main-welcolme-summon')
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #fff'})
 						$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 						$('.ul-li-img1').css({'border':'0px solid #999'})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/index.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/index.html .index-btn-wrap')
 						$('.body-filter-preloader').hide();
-					}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html'){
+					}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub1.html'){
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .main-welcolme-summon')
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .main-welcolme-summon')
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 						$('#topmenu1-list-span1').css({'border-bottom':'3px solid #bbb'})
 						$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1233,12 +1233,12 @@ $(function(){
 						$('#list-ul-li1').css({'border':'3px solid #999'})
 						$('#slide-wrap').css({'display':'none'})
 						$('#slide-wrap-i').css({'display':'block'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .index-btn-wrap')
 						$('.body-filter-preloader').hide();
-					}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html'){
+					}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub2.html'){
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .main-welcolme-summon')
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .main-welcolme-summon')
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 						$('#topmenu1-list-span2').css({'border-bottom':'3px solid #bbb'})
 						$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1247,12 +1247,12 @@ $(function(){
 						$('#list-ul-li2').css({'border':'3px solid #999'})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .index-btn-wrap')
 						$('.body-filter-preloader').hide();
-					}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html'){
+					}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub3.html'){
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .main-welcolme-summon')
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .main-welcolme-summon')
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 						$('#topmenu1-list-span3').css({'border-bottom':'3px solid #bbb'})
 						$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1261,12 +1261,12 @@ $(function(){
 						$('#list-ul-li3').css({'border':'3px solid #999'})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .index-btn-wrap')
 						$('.body-filter-preloader').hide();
-					}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html'){
+					}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub4.html'){
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .main-welcolme-summon')
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .main-welcolme-summon')
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 						$('#topmenu1-list-span4').css({'border-bottom':'3px solid #bbb'})
 						$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1275,12 +1275,12 @@ $(function(){
 						$('#list-ul-li4').css({'border':'3px solid #999'})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .index-btn-wrap')
 						$('.body-filter-preloader').hide();
-					}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html'){
+					}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub5.html'){
 						$('.body-filter-preloader').show();
-						$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .main-welcolme-summon')
+						$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .main-welcolme-summon')
 						$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 						$('#topmenu1-list-span5').css({'border-bottom':'3px solid #bbb'})
 						$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1289,8 +1289,8 @@ $(function(){
 						$('#list-ul-li5').css({'border':'3px solid #999'})
 						$('#slide-wrap').css({'display':'block'})
 						$('#slide-wrap-i').css({'display':'none'})
-						$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .article-main-scrollall')
-						$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .index-btn-wrap')
+						$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .article-main-scrollall')
+						$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .index-btn-wrap')
 						$('.body-filter-preloader').hide();
 					}
 				})
@@ -1298,21 +1298,21 @@ $(function(){
 		}else{
 			$(window).on('popstate',function(event){
 
-				if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/index.html')
+				if (location.href=='https://cl0cktree.github.io/portfolioindex/index.html')
 				{
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .main-welcolme-summon')
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/index.html .main-welcolme-summon')
 					$('.topmenu1-list-span').css({'border-bottom':'0px solid #fff'})
 					$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
 					$('.ul-li-img1').css({'border':'0px solid #999'})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/index.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/index.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/index.html .index-btn-wrap')
 					$('.body-filter-preloader').hide();
-				}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html'){
+				}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub1.html'){
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .main-welcolme-summon')
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .main-welcolme-summon')
 					$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 					$('#topmenu1-list-span1').css({'border-bottom':'3px solid #bbb'})
 					$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1321,12 +1321,12 @@ $(function(){
 					$('#list-ul-li1').css({'border':'3px solid #999'})
 					$('#slide-wrap').css({'display':'none'})
 					$('#slide-wrap-i').css({'display':'block'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub1.html .index-btn-wrap')
 					$('.body-filter-preloader').hide();
-				}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html'){
+				}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub2.html'){
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .main-welcolme-summon')
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .main-welcolme-summon')
 					$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 					$('#topmenu1-list-span2').css({'border-bottom':'3px solid #bbb'})
 					$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1335,12 +1335,12 @@ $(function(){
 					$('#list-ul-li2').css({'border':'3px solid #999'})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub2.html .index-btn-wrap')
 					$('.body-filter-preloader').hide();
-				}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html'){
+				}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub3.html'){
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .main-welcolme-summon')
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .main-welcolme-summon')
 					$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 					$('#topmenu1-list-span3').css({'border-bottom':'3px solid #bbb'})
 					$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1349,12 +1349,12 @@ $(function(){
 					$('#list-ul-li3').css({'border':'3px solid #999'})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub3.html .index-btn-wrap')
 					$('.body-filter-preloader').hide();
-				}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html'){
+				}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub4.html'){
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .main-welcolme-summon')
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .main-welcolme-summon')
 					$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 					$('#topmenu1-list-span4').css({'border-bottom':'3px solid #bbb'})
 					$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1363,12 +1363,12 @@ $(function(){
 					$('#list-ul-li4').css({'border':'3px solid #999'})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub4.html .index-btn-wrap')
 					$('.body-filter-preloader').hide();
-				}else if(location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html'){
+				}else if(location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub5.html'){
 					$('.body-filter-preloader').show();
-					$('.article-main-welcolme').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .main-welcolme-summon')
+					$('.article-main-welcolme').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .main-welcolme-summon')
 					$('.topmenu1-list-span').css({'border-bottom':'0px solid #bbb'})
 					$('#topmenu1-list-span5').css({'border-bottom':'3px solid #bbb'})
 					$('.topmenu1-list-span').children('.list-span-leftborder, .list-span-rightborder').css({'bottom':'0px'})
@@ -1377,8 +1377,8 @@ $(function(){
 					$('#list-ul-li5').css({'border':'3px solid #999'})
 					$('#slide-wrap').css({'display':'block'})
 					$('#slide-wrap-i').css({'display':'none'})
-					$('.article-summon-wrap').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .article-main-scrollall')
-					$('.scr-index-box').load('http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html .index-btn-wrap')
+					$('.article-summon-wrap').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .article-main-scrollall')
+					$('.scr-index-box').load('https://cl0cktree.github.io/portfolioindex/sub/sub5.html .index-btn-wrap')
 					$('.body-filter-preloader').hide();
 				}
 
@@ -1423,22 +1423,22 @@ $(function(){
 			{
 				$('#section1-article1-nav1').css({'background':'rgba(0,0,0,0.5)'})
 				$('.nav1-topmenu1-list a').css({'color':'#fff'})
-				$('#phon-icon img').attr('src','http://clocktree.dothome.co.kr/portfolioindex/images/ｐ_icon-1.png')
-				$('#menu-icon img').attr('src','http://clocktree.dothome.co.kr/portfolioindex/images/m_icon-1.png')
+				$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon-1.png')
+				$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon-1.png')
 
 				$('#section1-article1-nav1').mouseover(function(){
 					$('#section1-article1-nav1').stop().css({'background':'#fff'})
 					$('.nav1-topmenu1-list a').css({'color':'#333'})
 					$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
-					$('#phon-icon img').attr('src','http://clocktree.dothome.co.kr/portfolioindex/images/ｐ_icon.png')
-					$('#menu-icon img').attr('src','http://clocktree.dothome.co.kr/portfolioindex/images/m_icon.png')
+					$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon.png')
+					$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon.png')
 				})
 				$('#section1-article1-nav1').mouseleave(function(){
 					$('#section1-article1-nav1').stop().css({'background':'rgba(0,0,0,0.5)'})
 					$('.nav1-topmenu1-list a').css({'color':'#fff'})
 					$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #fff')
-					$('#phon-icon img').attr('src','http://clocktree.dothome.co.kr/portfolioindex/images/ｐ_icon-1.png')
-					$('#menu-icon img').attr('src','http://clocktree.dothome.co.kr/portfolioindex/images/m_icon-1.png')
+					$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon-1.png')
+					$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon-1.png')
 
 				})
 
@@ -1448,8 +1448,8 @@ $(function(){
 				$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
 				$('.top-btn').css({'opacity':'0','z-index':'-1'})
 				$('.index-btn-wrap').css({'z-index':'-2','opacity':'0','height':'0px'})
-				$('#phon-icon img').attr('src','http://clocktree.dothome.co.kr/portfolioindex/images/ｐ_icon.png')
-				$('#menu-icon img').attr('src','http://clocktree.dothome.co.kr/portfolioindex/images/m_icon.png')
+				$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon.png')
+				$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon.png')
 
 				$('#section1-article1-nav1').mouseover(function(){
 					$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
@@ -1562,22 +1562,22 @@ $(function(){
 			$('#phon-icon').css('background-position','-80px 0px')
 		}
 		var scpar
-		if ((location.href=='http://clocktree.dothome.co.kr/portfolioindex/index.html')||(location.href=='http://clocktree.dothome.co.kr/portfolioindex/')||(location.href=='http://clocktree.dothome.co.kr/portfolioindex'))
+		if ((location.href=='https://cl0cktree.github.io/portfolioindex/index.html')||(location.href=='https://cl0cktree.github.io/portfolioindex/')||(location.href=='https://cl0cktree.github.io/portfolioindex'))
 		{
 			scpar = 500;
-		}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub1.html')
+		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
 		{
 			scpar = 350;
-		}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub2.html')
+		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
 		{
 			scpar = 350;
-		}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub3.html')
+		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
 		{
 			scpar = 50;
-		}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub4.html')
+		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
 		{
 			scpar = 0;
-		}else if (location.href=='http://clocktree.dothome.co.kr/portfolioindex/sub/sub5.html')
+		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
 		{
 			scpar = 200;
 		}
@@ -1700,123 +1700,123 @@ $(function(){
 			var datasum
 			if ((this==document.getElementById('con-box1-imgborder1'))||(this==document.getElementById('con-box1-caption1')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents1';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents1';
 			}else if ((this==document.getElementById('con-box1-imgborder2'))||(this==document.getElementById('con-box1-caption2')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents2';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents2';
 			}else if ((this==document.getElementById('con-box1-imgborder3'))||(this==document.getElementById('con-box1-caption3')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents3';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents3';
 			}else if ((this==document.getElementById('con-box1-imgborder4'))||(this==document.getElementById('con-box1-caption4')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents4';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents4';
 			}else if ((this==document.getElementById('con-box1-imgborder5'))||(this==document.getElementById('con-box1-caption5')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents5';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents5';
 			}else if ((this==document.getElementById('con-box1-imgborder6'))||(this==document.getElementById('con-box1-caption6')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents6';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents6';
 			}else if ((this==document.getElementById('con-box1-imgborder7'))||(this==document.getElementById('con-box1-caption7')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents7';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents7';
 			}else if ((this==document.getElementById('con-box1-imgborder8'))||(this==document.getElementById('con-box1-caption8')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents8';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents8';
 			}else if ((this==document.getElementById('con-box1-imgborder9'))||(this==document.getElementById('con-box1-caption9')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents9';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents9';
 			}else if ((this==document.getElementById('con-box1-imgborder10'))||(this==document.getElementById('con-box1-caption10')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents10';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents10';
 			}else if ((this==document.getElementById('con-box1-imgborder11'))||(this==document.getElementById('con-box1-caption11')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents11';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents11';
 			}else if ((this==document.getElementById('con-box1-imgborder12'))||(this==document.getElementById('con-box1-caption12')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-m.html #filter-conbox-contents1';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-m.html #filter-conbox-contents1';
 			}else if ((this==document.getElementById('con-box1-imgborder13'))||(this==document.getElementById('con-box1-caption13')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-m.html #filter-conbox-contents2';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-m.html #filter-conbox-contents2';
 			}else if ((this==document.getElementById('con-box1-imgborder14'))||(this==document.getElementById('con-box1-caption14')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-m.html #filter-conbox-contents3';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-m.html #filter-conbox-contents3';
 			}else if ((this==document.getElementById('con-box1-imgborder15'))||(this==document.getElementById('con-box1-caption15')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-f.html #filter-conbox-contents1';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-f.html #filter-conbox-contents1';
 			}else if ((this==document.getElementById('con-box1-imgborder16'))||(this==document.getElementById('con-box1-caption16')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-f.html #filter-conbox-contents2';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-f.html #filter-conbox-contents2';
 			}else if ((this==document.getElementById('con-box1-imgborder17'))||(this==document.getElementById('con-box1-caption17')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-g.html #filter-conbox-contents1';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-g.html #filter-conbox-contents1';
 			}else if ((this==document.getElementById('con-box1-imgborder18'))||(this==document.getElementById('con-box1-caption18')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-g.html #filter-conbox-contents2';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-g.html #filter-conbox-contents2';
 			}else if ((this==document.getElementById('con-box1-imgborder19'))||(this==document.getElementById('con-box1-caption19')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-g.html #filter-conbox-contents3';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-g.html #filter-conbox-contents3';
 			}else if ((this==document.getElementById('con-box1-imgborder20'))||(this==document.getElementById('con-box1-caption20')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-g.html #filter-conbox-contents4';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-g.html #filter-conbox-contents4';
 			}else if ((this==document.getElementById('con-box1-imgborder21'))||(this==document.getElementById('con-box1-caption21')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-g.html #filter-conbox-contents5';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-g.html #filter-conbox-contents5';
 			}
 
 			else if ((this==document.getElementById('con-box2-imgborder1'))||(this==document.getElementById('con-box2-caption1')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents12';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents12';
 			}else if ((this==document.getElementById('con-box2-imgborder2'))||(this==document.getElementById('con-box2-caption2')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents13';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents13';
 			}else if ((this==document.getElementById('con-box2-imgborder3'))||(this==document.getElementById('con-box2-caption3')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents14';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents14';
 			}else if ((this==document.getElementById('con-box2-imgborder4'))||(this==document.getElementById('con-box2-caption4')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents15';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents15';
 			}else if ((this==document.getElementById('con-box2-imgborder5'))||(this==document.getElementById('con-box2-caption5')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents16';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents16';
 			}else if ((this==document.getElementById('con-box2-imgborder6'))||(this==document.getElementById('con-box2-caption6')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents17';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents17';
 			}else if ((this==document.getElementById('con-box2-imgborder7'))||(this==document.getElementById('con-box2-caption7')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents18';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents18';
 			}else if ((this==document.getElementById('con-box2-imgborder8'))||(this==document.getElementById('con-box2-caption8')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents19';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents19';
 			}else if ((this==document.getElementById('con-box2-imgborder9'))||(this==document.getElementById('con-box2-caption9')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-g.html #filter-conbox-contents6';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-g.html #filter-conbox-contents6';
 			}
 
 			else if ((this==document.getElementById('con-box3-imgborder1'))||(this==document.getElementById('con-box3-caption1')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-g.html #filter-conbox-contents7';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-g.html #filter-conbox-contents7';
 			}else if ((this==document.getElementById('con-box3-imgborder2'))||(this==document.getElementById('con-box3-caption2')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-g.html #filter-conbox-contents8';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-g.html #filter-conbox-contents8';
 			}else if ((this==document.getElementById('con-box3-imgborder3'))||(this==document.getElementById('con-box3-caption3')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents21';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents21';
 			}else if ((this==document.getElementById('con-box3-imgborder4'))||(this==document.getElementById('con-box3-caption4')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents22';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents22';
 			}else if ((this==document.getElementById('con-box4-imgborder1'))||(this==document.getElementById('con-box4-caption1')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents23';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents23';
 			}else if ((this==document.getElementById('con-box4-imgborder2'))||(this==document.getElementById('con-box4-caption2')))
 			{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data.html #filter-conbox-contents24';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data.html #filter-conbox-contents24';
 			}
 
 			else{
-				datasum = 'http://clocktree.dothome.co.kr/portfolioindex/data/data-m.html #filter-conbox-contents4';
+				datasum = 'https://cl0cktree.github.io/portfolioindex/data/data-m.html #filter-conbox-contents4';
 			}
 
-			$('.click-all-filter').fadeOut('fast').load('http://clocktree.dothome.co.kr/portfolioindex/cover/cover.html .all-filter-conbox',function(){
+			$('.click-all-filter').fadeOut('fast').load('https://cl0cktree.github.io/portfolioindex/cover/cover.html .all-filter-conbox',function(){
 				$('.click-all-filter').fadeIn('fast')
 				$('.filter-conbox-contentswrap').load(datasum)
 			}).fadeIn('fast')
