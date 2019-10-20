@@ -2426,7 +2426,7 @@ $(function(){
 		/*------------------------------------------------------------*/
 //=============램덤 방울 particle============
 function bubble_background1(){
-	var b_canbus=document.querySelecter('.main-scrollall-backb');
+	var b_canbus=document.querySelector('.main-scrollall-backb');
 	//setInterval(function(){/*처음에 딜레이를 주고 싶으면 이것도 활성화*/
 	for (var i=1; i<5; ++i)
 	{
@@ -2453,7 +2453,7 @@ function bubble_background1(){
 };
 //===es6버전 original version=====================
 // function bubble_background2(){
-// 	const b_canbus=document.querySelecter('.main-scrollall-backb');
+// 	const b_canbus=document.querySelector('.main-scrollall-backb');
 // 	const circleArray = [];
 // 	let loopCancel;
 // 	const canvas = document.createElement('canvas');
@@ -2553,7 +2553,7 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 function bubble_background2() {
-	var b_canbus = document.querySelecter('.main-scrollall-backb');
+	var b_canbus = document.querySelector('.main-scrollall-backb');
 	var circleArray = [];
 	var loopCancel;
 	var canvas = document.createElement('canvas');
