@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {padding:0;margin:0;border:0;display:block;position:relative;o
 header{padding:0;margin:0;border:0;display:block;position:relative;overflow:hidden;}
 footer{width:100%;background:#fff;position:relative;margin:0;padding:0;margin:0;border:0;border-top:1px solid #000;display:block;z-index:5;}
 a{font-family:'Nanum Gothic','NanumGothic','Gothic','고딕';}
-canvas{position:absolute;bottom:0;left:0;right:0;width:100%;z-index:0;}
+canvas{position:fixed;bottom:0;left:0;right:0;width:100%;z-index:0;}
 
 input[type=radio]{display:none;}
 input[type=radio]+label{display:inline-block;cursor:pointer;position:relative;padding-left:14px;margin-right:15px;}
