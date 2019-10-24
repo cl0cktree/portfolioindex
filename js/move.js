@@ -2378,6 +2378,7 @@ $(function(){
 
 		var as=autospeed/1000-1;
 		var countid=100/as;
+		var count;
 		
 		function timein(){
 
