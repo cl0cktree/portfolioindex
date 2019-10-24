@@ -2019,7 +2019,7 @@ $(function(){
 				timein();
 			}
 		});
-
+		timein();
 		$('.slide').on('touchstart touchend touchcancle click mouseover mouseleave',function(event){
 			/*
 			//-현재의 변화되는 x와 ywhkvy 값-
@@ -2391,7 +2391,7 @@ $(function(){
 		};
 
 		var autospeed=3000;
-		var as=0;
+		var as=autospeed/1000-1;
 		var countid=100/as;
 		var count;
 		
@@ -2461,7 +2461,7 @@ $(function(){
 			},autospeed)
 		}
 		start();
-		timein();
+		
 		function stop(){
 			clearInterval(interval);
 		}
