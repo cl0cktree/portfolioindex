@@ -2406,8 +2406,6 @@ $(function(){
 		}
 
 		function start(){
-
-			timein();
 			interval = setInterval(function(){
 				msswipe = mswidth*100;
 				msminus = mswidth*-100+100;
@@ -2449,6 +2447,7 @@ $(function(){
 			},autospeed)
 		}
 		start();
+		timein();
 		function stop(){
 			clearInterval(interval);
 			timeout();
