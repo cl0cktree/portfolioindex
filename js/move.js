@@ -1982,9 +1982,11 @@ $(function(){
 			if (event.type=='mouseover')
 			{
 				stop();
+				timeout();
 			}else if (event.type=='mouseout')
 			{
 				start();
+				timein();
 			}
 		});
 
@@ -2010,9 +2012,11 @@ $(function(){
 			if (event.type=='mouseover')
 			{
 				stop();
+				timeout();
 			}else if (event.type=='mouseout')
 			{
 				start();
+				timein();
 			}
 		});
 
@@ -2126,6 +2130,8 @@ $(function(){
 				ymove=event.originalEvent.changedTouches[0].pageY;
 
 				stop();
+				timeout();
+
 				var tvalue = tstart-tmove;
 				var yvalue = ystart-ymove;
 
@@ -2184,6 +2190,7 @@ $(function(){
 
 				}
 				start();
+				timein();
 			}
 
 			else if (event.type=='touchcancle')
@@ -2193,6 +2200,8 @@ $(function(){
 				// tend=event.originalEvent.touches[0].pageX;
 
 				stop();
+				timeout();
+
 				var tvalue = tstart-tmove;
 				var yvalue = ystart-ymove;
 
@@ -2251,6 +2260,7 @@ $(function(){
 					}
 				}
 				start();
+				timein();
 			}
 			else if (event.type=='click')
 			{
@@ -2282,10 +2292,12 @@ $(function(){
 			else if (event.type=='mouseover')
 			{
 				stop();
+				timeout();
 			}
 			else if (event.type=='mouseleave')
 			{
 				start();
+				timein();
 			}
 			return false;
 		});
@@ -2354,9 +2366,11 @@ $(function(){
 			if (event.type=='mouseover')
 			{
 				stop();
+				timeout();
 			}else if (event.type=='mouseleave')
 			{
 				start();
+				timein();
 			}
 		});
 
@@ -2450,7 +2464,6 @@ $(function(){
 		timein();
 		function stop(){
 			clearInterval(interval);
-			timeout();
 		}
 		/*------------------------------------------------------------*/
 //=============램덤 방울 particle============
