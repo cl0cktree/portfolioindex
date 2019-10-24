@@ -2393,14 +2393,14 @@ $(function(){
 		var autospeed=3000;
 		var as=autospeed/1000-1;
 		var countid=100/as;
-		var count;
+		//var count;
 		
 		function timein(){
 
 			count = setInterval(function(){
 				if (as<1)
 				{
-					timeout()
+					timeout();
 					as=autospeed/1000-1;
 					$('.countbar').remove('');
 				}else{
