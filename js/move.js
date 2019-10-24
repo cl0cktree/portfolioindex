@@ -2449,7 +2449,7 @@ $(function(){
 				}else{
 					var ai=autospeed/1000-as;
 					$('.slide-wrap').append('<span class="countbar"></span>')
-					$('.countbar').stop().animate({'width':countid*ai+'%'},autospeed-autospeed*0.66)
+					$('.countbar').stop().animate({'width':countid*ai+'%'},autospeed-autospeed*0.8)
 					as--;
 					console.log('in = as : '+as+ ' / ai : '+ ai +' / countid : '+countid+' / count : '+count+' / width :'+countid*ai);
 				}
