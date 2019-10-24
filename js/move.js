@@ -2393,7 +2393,7 @@ $(function(){
 					$('.slide-wrap').append('<span class="countbar"></span>')
 					$('.countbar').stop().animate({'width':countid*ai+'%'},autospeed-autospeed*0.4925)
 					as--;
-					console.log(autospeed);
+					console.log(as);
 				}
 			},1000)
 		}
