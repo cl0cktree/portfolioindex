@@ -2376,6 +2376,32 @@ $(function(){
 			$('#next-btn').css({'z-index':'-5','opacity':'0'})
 		};
 
+		var as=autospeed/1000-1;
+		var countid=100/as;
+		
+		function timein(){
+
+			count = setInterval(function(){
+				if (as<1)
+				{
+					timeout()
+					as=autospeed/1000-1;
+					$('.countbar1, .countbar2').remove('');
+				}else{
+					var ai=autospeed/1000-as;
+					$('.slide-wrap').append('<span class="countbar"></span>')
+					$('.countbar').stop().animate({'width':countid*ai+'%'},autospeed-autospeed*0.4925)
+					as--;
+				}
+			},1000)
+		}
+
+		function timeout(){
+			clearInterval(count);
+			as=autospeed/1000-1;
+			$('.countbar').remove('');
+		}
+
 		var autospeed=3000;
 		function start(){
 			interval = setInterval(function(){
@@ -2416,12 +2442,13 @@ $(function(){
 					$('#prev-btn').css({'z-index':'4','opacity':'1'})
 					$('#next-btn').css({'z-index':'-5','opacity':'0'})
 				}
-
+				timein();
 			},autospeed)
 		}
 		start();
 		function stop(){
-			clearInterval(interval)
+			clearInterval(interval);
+			timeout();
 		}
 		/*------------------------------------------------------------*/
 //=============램덤 방울 particle============
