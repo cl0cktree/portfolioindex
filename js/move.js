@@ -2406,7 +2406,6 @@ $(function(){
 		}
 
 		function start(){
-			console.log('out = as : '+as+ ' / ai : '+ ai +' / countid : '+countid+' / count : '+count+' / width :'+countid*ai);
 
 			timein();
 			interval = setInterval(function(){
