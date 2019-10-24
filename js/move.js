@@ -2405,6 +2405,7 @@ $(function(){
 
 		var autospeed=3000;
 		function start(){
+			timein();
 			interval = setInterval(function(){
 				msswipe = mswidth*100;
 				msminus = mswidth*-100+100;
@@ -2443,7 +2444,6 @@ $(function(){
 					$('#prev-btn').css({'z-index':'4','opacity':'1'})
 					$('#next-btn').css({'z-index':'-5','opacity':'0'})
 				}
-				timein();
 			},autospeed)
 		}
 		start();
