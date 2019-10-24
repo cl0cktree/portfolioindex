@@ -2376,8 +2376,9 @@ $(function(){
 			$('#next-btn').css({'z-index':'-5','opacity':'0'})
 		};
 
-		var as=autospeed%1000-1;
-		var countid=100%as;
+		var autospeed=3000;
+		var as=autospeed/1000-1;
+		var countid=100/as;
 		var count;
 		
 		function timein(){
@@ -2393,7 +2394,7 @@ $(function(){
 					$('.slide-wrap').append('<span class="countbar"></span>')
 					$('.countbar').stop().animate({'width':countid*ai+'%'},autospeed-autospeed*0.4925)
 					as--;
-					console.log('as : '+as+ ' / ai : '+ ai +' / countid : '+countid+' / count : '+count+' / width :'+countid*ai);
+					console.log('in = as : '+as+ ' / ai : '+ ai +' / countid : '+countid+' / count : '+count+' / width :'+countid*ai);
 				}
 			},1000)
 		}
@@ -2404,8 +2405,9 @@ $(function(){
 			$('.countbar').remove('');
 		}
 
-		var autospeed=3000;
 		function start(){
+			console.log('out = as : '+as+ ' / ai : '+ ai +' / countid : '+countid+' / count : '+count+' / width :'+countid*ai);
+
 			timein();
 			interval = setInterval(function(){
 				msswipe = mswidth*100;
