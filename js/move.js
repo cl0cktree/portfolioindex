@@ -2450,7 +2450,7 @@ $(function(){
 					var ai=autospeed/1000-as;
 					$('.slide-wrap').append('<span class="countbar"></span>')
 					//$('.countbar').stop().animate({'width':countid*ai+'%'},autospeed-autospeed*0.8)//끊어서 나오는 모양.
-					$('.countbar').stop().animate({'width':'100%'},autospeed-autospeed*0.6)
+					$('.countbar').stop().animate({'width':'100%'},autospeed-autospeed*0.7)
 					as--;
 					//console.log('in = as : '+as+ ' / ai : '+ ai +' / countid : '+countid+' / count : '+count+' / width :'+countid*ai);
 				}
