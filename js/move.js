@@ -2402,7 +2402,7 @@ $(function(){
 				{
 					timeout()
 					as=autospeed/1000-1;
-					$('.countbar1, .countbar2').remove('');
+					$('.countbar').remove('');
 				}else{
 					var ai=autospeed/1000-as;
 					$('.slide-wrap').append('<span class="countbar"></span>')
