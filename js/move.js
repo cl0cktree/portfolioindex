@@ -2376,12 +2376,12 @@ $(function(){
 			$('#next-btn').css({'z-index':'-5','opacity':'0'})
 		};
 
-		var as;
-		var countid=100/as;
+		var as=autospeed%1000-1;
+		var countid=100%as;
 		var count;
 		
 		function timein(){
-			as=autospeed/1000-1;
+
 			count = setInterval(function(){
 				if (as<1)
 				{
