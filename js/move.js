@@ -2391,7 +2391,7 @@ $(function(){
 		};
 
 		var autospeed=3000;
-		var as=autospeed/1000-1;
+		var as=0;
 		var countid=100/as;
 		var count;
 		
