@@ -2396,7 +2396,8 @@ $(function(){
 				msswipe = mswidth*100;
 				msminus = mswidth*-100+100;
 				var m;
-
+				timeout();
+				timein();
 				if (move==msminus)
 				{
 					move=0;
