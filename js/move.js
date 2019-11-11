@@ -2670,7 +2670,7 @@ $(function(){
 				x: x,
 				y: y,
 				speed: speed,
-				radius: Math.floor(Math.random() * 30) + 10,
+				radius: Math.floor(Math.random() * 30) + 20,
 				startAngle: 360,
 				endAngle: 350,
 				clockwise: false
@@ -2692,7 +2692,7 @@ $(function(){
 			if (circle.y < -circle.radius) {
 				circle.y = canvas.height;
 				circle.x = Math.random() * window.innerWidth * 0.8 + Math.random() * window.innerWidth * 0.2;
-				circle.radius = Math.floor(Math.random() * 30) + 10;
+				circle.radius = Math.floor(Math.random() * 30) + 20;
 			}
 
 			circle.draw();
