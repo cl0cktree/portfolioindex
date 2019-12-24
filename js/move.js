@@ -1,4 +1,20 @@
 $(function(){
+	//--슬라이더 최초 이미지와의 다운로드 시간차 대비 height 조정.--
+	function lazy_0(){
+		if($('.slide-wrap').height()==0||$('.slide-wrap').height()==null){
+			$(document).ready(function(){
+					msheight = $('.slide').children('img').height();
+					$('.slide-wrap').css({'height':msheight});
+					//console.log(msheight+' --');
+				}
+			);
+			//console.log('++');
+		};
+	}
+	if($('.slide-wrap').height()==0||$('.slide-wrap').height()==null){
+		setInterval(lazy_0,-100);
+		//console.log('==');
+	};
 	/*loader 제어*/
 
 	$(document).ready(function(){
