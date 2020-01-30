@@ -1422,7 +1422,6 @@ $(function(){
 		if(!scroll_delay_time_1){
 			scroll_delay_time_1 = setTimeout(function(){
 				scroll_delay_time_1=null;
-
 				if ($('#article1-nav1-topmenu1').css('display')=='block')
 				{
 					$('.body-all-header').animate({'height':'50px'},100)
@@ -1636,7 +1635,6 @@ $(function(){
 						}
 					}
 				}
-
 			},scroll_framespeed);
 		};
 	})
@@ -1673,7 +1671,6 @@ $(function(){
 		if(!scroll_delay_time_2){
 			scroll_delay_time_2 = setTimeout(function(){
 				scroll_delay_time_2=null;
-
 				$('.article-main-scrollall').each(function(){
 					var topminus2 = 0;
 					if ($('#article1-nav1-topmenu1').css('display')=='block')
@@ -1685,16 +1682,13 @@ $(function(){
 					if ($(window).scrollTop()>=$(this).offset().top-topminus2)
 					{
 						var scm = $(this).attr('id').substring(19,20);
-		
 						$('.index-btn-all').css({'background':'rgba(0,0,0,1)','border':'1px solid #fff'})
 						$('#index-btn-num'+scm).css({'background':'rgba(255,255,255,1)','border':'1px solid #000'})
-		
 					}
 				})
-
 			},scroll_framespeed);
-		}
-	})
+		};
+	});
 	/*----------------------------------------------------------------------*/
 
 	/*기종체크 후 전화연결*/
