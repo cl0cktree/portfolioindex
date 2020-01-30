@@ -15,8 +15,8 @@ $(function(){
 		setInterval(lazy_0,-100);
 		//console.log('==');
 	};
+	var scroll_framespeed = 1000/60;
 	/*loader 제어*/
-
 	$(document).ready(function(){
 		$('.body-filter-preloader').load('https://cl0cktree.github.io/portfolioindex/cover/cover.html .filter-preloader-loadingbox',function(){
 			$('.body-filter-preloader').hide();
@@ -1418,219 +1418,227 @@ $(function(){
 	/*topmenu 및 top-btn scroll*/
 	var scrollindex = $('.article-main-scrollall').each(Array).length;
 	$(window).scroll(function(){
-		if ($('#article1-nav1-topmenu1').css('display')=='block')
-		{
-			$('.body-all-header').animate({'height':'50px'},100)
-			$('.article1-nav1-toplogo').animate({'height':'0px'},100)
-		}else{
-			$('.body-all-header').animate({'height':'100px'},100)
-			$('.article1-nav1-toplogo').animate({'height':'100px'},100)
-		}
-		if ($(window).scrollTop()>0)
-		{
-			$('#section1-article1-nav1').css({'background':'rgba(0,0,0,0.5)'})
-			$('.nav1-topmenu1-list a').css({'color':'#fff'})
-			$('#phon-icon').css('background-position','-80px -40px')
+		var scroll_delay_time;
+		if(!scroll_delay_time){
+			scroll_delay_time = setTimeout(function(){
+				scroll_delay_time=null;
 
-			$('#section1-article1-nav1').mouseover(function(){
-				$('#section1-article1-nav1').stop().css({'background':'#fff'})
-				$('.nav1-topmenu1-list a').css({'color':'#333'})
-				$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
-				$('#phon-icon').css('background-position','-80px 0px')
-
-			})
-			$('#section1-article1-nav1').mouseleave(function(){
-				$('#section1-article1-nav1').stop().css({'background':'rgba(0,0,0,0.5)'})
-				$('.nav1-topmenu1-list a').css({'color':'#fff'})
-				$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #fff')
-				$('#phon-icon').css('background-position','-80px -40px')
-
-			})
-
-			/*
-			if ($('#section1-article1-nav1').css('width')<'360px')
-			{
-				$('#section1-article1-nav1').css({'background':'rgba(0,0,0,0.5)'})
-				$('.nav1-topmenu1-list a').css({'color':'#fff'})
-				$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon-1.png')
-				$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon-1.png')
-
-				$('#section1-article1-nav1').mouseover(function(){
-					$('#section1-article1-nav1').stop().css({'background':'#fff'})
-					$('.nav1-topmenu1-list a').css({'color':'#333'})
-					$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
-					$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon.png')
-					$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon.png')
-				})
-				$('#section1-article1-nav1').mouseleave(function(){
-					$('#section1-article1-nav1').stop().css({'background':'rgba(0,0,0,0.5)'})
+				if ($('#article1-nav1-topmenu1').css('display')=='block')
+				{
+					$('.body-all-header').animate({'height':'50px'},100)
+					$('.article1-nav1-toplogo').animate({'height':'0px'},100)
+				}else{
+					$('.body-all-header').animate({'height':'100px'},100)
+					$('.article1-nav1-toplogo').animate({'height':'100px'},100)
+				}
+				if ($(window).scrollTop()>0)
+				{
+					$('#section1-article1-nav1').css({'background':'rgba(0,0,0,0.5)'})
 					$('.nav1-topmenu1-list a').css({'color':'#fff'})
-					$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #fff')
-					$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon-1.png')
-					$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon-1.png')
-
-				})
-
-			}else{
-				$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
-				$('.nav1-topmenu1-list a').css({'color':'#333'})
-				$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
-				$('.top-btn').css({'opacity':'0','z-index':'-1'})
-				$('.index-btn-wrap').css({'z-index':'-2','opacity':'0','height':'0px'})
-				$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon.png')
-				$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon.png')
-
-				$('#section1-article1-nav1').mouseover(function(){
-					$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
-					$('.nav1-topmenu1-list a').css({'color':'#333'})
-					$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
-
-				})
-				$('#section1-article1-nav1').mouseleave(function(){
-					$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
-					$('.nav1-topmenu1-list a').css({'color':'#333'})
-					$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
-
-				})
-
-			}*/
-			if ($('.top-btn').css('z-index')=='59')
-			{
-
-				if(($(window).height()+$(window).scrollTop()>=$('.body-section-content').height())||($('.nav1-side-menu').css('right')=='0px'))//현재 window와 현재의 scroll값을 더한 값이 보여지는 document 이상일 경우(현재 scroll 위치) -> top 기준이기 때문에 탑메뉴의 height가 늘어나면 연산을 다시해서 재실행 되는 문제가 있음.
-				{
-					$('.top-btn').stop().animate({'bottom':'90px'},200)
-				}else{
-					$('.top-btn').stop().animate({'bottom':'50px'},200)
-				}
-			}else{
-				$('.top-btn').css({'opacity':'0.5','z-index':'59','cursor':'pointer'})
-				if (($(window).height()+$(window).scrollTop()>=$('.body-section-content').height())||($('.nav1-side-menu').css('right')=='0px'))
-				{
-					$('.top-btn').stop().animate({'bottom':'90px'},200)
-
-				}else{
-					$('.top-btn').stop().animate({'bottom':'50px'},200)
-				}
-			}
-			if ($('.index-btn-wrap').css('z-index')=='58'){
-
-				if (($(window).height()+$(window).scrollTop()>=$('.body-section-content').height())||($('.nav1-side-menu').css('right')=='0px'))//현재 window와 현재의 scroll값을 더한 값이 보여지는 document 이상일 경우(현재 scroll 위치) -> top 기준이기 때문에 탑메뉴의 height가 늘어나면 연산을 다시해서 재실행 되는 문제가 있음.
-				{
-					$('.index-btn-wrap').stop().animate({'bottom':'144px'},150)
-				}else{
-					$('.index-btn-wrap').stop().animate({'bottom':'104px'},150)
-				}
-			}else{
-				/*
-				var bwheight = scrollindex*24;
-				$('.index-btn-wrap').css({'z-index':'58','opacity':'0.5','height':bwheight+'px'})//.index-btn-wrap의 높이 자동계산.
-				for (var scrmenu = 1 ; scrmenu<=scrollindex ; scrmenu++)
-				{
-					$('.index-btn-wrap').append('<a><div class="index-btn-all" id="index-btn-num'+scrmenu+'">'+scrmenu+'</div></a>')
-				}
-				*/
-				$('.index-btn-wrap').css({'z-index':'58','opacity':'0.5'})
-
-				if (($(window).height()+$(window).scrollTop()>=$('.body-section-content').height())||($('.nav1-side-menu').css('right')=='0px'))
-				{
-					$('.index-btn-wrap').stop().animate({'bottom':'144px'},150)
-				}else{
-					$('.index-btn-wrap').stop().animate({'bottom':'104px'},150)
-				}
-			}
-
-			$('.top-btn').click(function(){
-				var topbtnm
-				if ($('.body-all-header').css('height')=='50px')
-				{
-					topbtnm = 50;
-				}else if ($('.body-all-header').css('height')=='100px')
-				{
-					topbtnm = 100;
-				}else if ($('.body-all-header').css('height')=='150px')
-				{
-					topbtnm = 150;
-				}
-				$('body, html').stop().animate({ scrollTop: $("body").offset().top-topbtnm },400);
-				$('.index-btn-all').css({'background':'rgba(0,0,0,1)','border':'1px solid #fff'})
-				$('#scrollall-back-acc1').stop().animate({'top':'270px'},100)
-				$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
-			})
-			if ($(window).scrollTop()==0){
-				$('#scrollall-back-acc1').stop().animate({'top':'270px'},100)
-				$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
-			}
-			if ($(window).scrollTop()>70)
-			{
-				$('#scrollall-back-acc1').stop().animate({'top':'170px'},100)
-				$('#scrollall-back-acc2').stop().animate({'top':'220px'},100)
-			}else{
-				$('#scrollall-back-acc1').stop().animate({'top':'270px'},100)
-				$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
-			}
-
-		}else{
-			$('#section1-article1-nav1').css({'background':'rgba(255,255,255,1)'})
-			$('.nav1-topmenu1-list a').css({'color':'#333'})
-			$('.top-btn').css({'opacity':'0','z-index':'-1','cursor':'initial'})
-			$('.index-btn-wrap').css({'z-index':'-2','opacity':'0'})
-			//$('.index-btn-all').remove('')
-			$('#section1-article1-nav1').mouseover(function(){
-				$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
-				$('.nav1-topmenu1-list a').css({'color':'#333'})
-				$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
-			})
-			$('#section1-article1-nav1').mouseleave(function(){
-				$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
-				$('.nav1-topmenu1-list a').css({'color':'#333'})
-				$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
-				$('#phon-icon').css('background-position','-80px 0px')
-
-			})
-			$('#phon-icon').css('background-position','-80px 0px')
-		}
-		var scpar
-		if ((location.href=='https://cl0cktree.github.io/portfolioindex/index.html')||(location.href=='https://cl0cktree.github.io/portfolioindex/')||(location.href=='https://cl0cktree.github.io/portfolioindex'))
-		{
-			scpar = 500;
-		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
-		{
-			scpar = 350;
-		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
-		{
-			scpar = 350;
-		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
-		{
-			scpar = 50;
-		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
-		{
-			scpar = 0;
-		}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
-		{
-			scpar = 200;
-		}
-
-		var mw1 = $('.move-wrap1').height();
-		var mw2 = $('.move-wrap2').height();
-		var mw3 = $('.move-wrap3').height();
-
-		if ($(window).scrollTop()>50)
-		{
-			$('.move-wrap1').animate({'opacity':'1'},400)
-			if ($(window).scrollTop()>mw1)
-			{
-				$('.move-wrap2').animate({'left':'0','opacity':'1'},400)
-				if ($(window).scrollTop()>mw1+mw2)
-				{
-					$('.move-wrap3').animate({'left':'0','opacity':'1'},400)
-					if ($(window).scrollTop()>mw1+mw2+mw3)
+					$('#phon-icon').css('background-position','-80px -40px')
+		
+					$('#section1-article1-nav1').mouseover(function(){
+						$('#section1-article1-nav1').stop().css({'background':'#fff'})
+						$('.nav1-topmenu1-list a').css({'color':'#333'})
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
+						$('#phon-icon').css('background-position','-80px 0px')
+		
+					})
+					$('#section1-article1-nav1').mouseleave(function(){
+						$('#section1-article1-nav1').stop().css({'background':'rgba(0,0,0,0.5)'})
+						$('.nav1-topmenu1-list a').css({'color':'#fff'})
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #fff')
+						$('#phon-icon').css('background-position','-80px -40px')
+		
+					})
+		
+					/*
+					if ($('#section1-article1-nav1').css('width')<'360px')
 					{
-						$('.move-wrap4').animate({'left':'0','opacity':'1'},400)
+						$('#section1-article1-nav1').css({'background':'rgba(0,0,0,0.5)'})
+						$('.nav1-topmenu1-list a').css({'color':'#fff'})
+						$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon-1.png')
+						$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon-1.png')
+		
+						$('#section1-article1-nav1').mouseover(function(){
+							$('#section1-article1-nav1').stop().css({'background':'#fff'})
+							$('.nav1-topmenu1-list a').css({'color':'#333'})
+							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
+							$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon.png')
+							$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon.png')
+						})
+						$('#section1-article1-nav1').mouseleave(function(){
+							$('#section1-article1-nav1').stop().css({'background':'rgba(0,0,0,0.5)'})
+							$('.nav1-topmenu1-list a').css({'color':'#fff'})
+							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #fff')
+							$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon-1.png')
+							$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon-1.png')
+		
+						})
+		
+					}else{
+						$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
+						$('.nav1-topmenu1-list a').css({'color':'#333'})
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
+						$('.top-btn').css({'opacity':'0','z-index':'-1'})
+						$('.index-btn-wrap').css({'z-index':'-2','opacity':'0','height':'0px'})
+						$('#phon-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/ｐ_icon.png')
+						$('#menu-icon img').attr('src','https://cl0cktree.github.io/portfolioindex/images/m_icon.png')
+		
+						$('#section1-article1-nav1').mouseover(function(){
+							$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
+							$('.nav1-topmenu1-list a').css({'color':'#333'})
+							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
+		
+						})
+						$('#section1-article1-nav1').mouseleave(function(){
+							$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
+							$('.nav1-topmenu1-list a').css({'color':'#333'})
+							$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
+		
+						})
+		
+					}*/
+					if ($('.top-btn').css('z-index')=='59')
+					{
+		
+						if(($(window).height()+$(window).scrollTop()>=$('.body-section-content').height())||($('.nav1-side-menu').css('right')=='0px'))//현재 window와 현재의 scroll값을 더한 값이 보여지는 document 이상일 경우(현재 scroll 위치) -> top 기준이기 때문에 탑메뉴의 height가 늘어나면 연산을 다시해서 재실행 되는 문제가 있음.
+						{
+							$('.top-btn').stop().animate({'bottom':'90px'},200)
+						}else{
+							$('.top-btn').stop().animate({'bottom':'50px'},200)
+						}
+					}else{
+						$('.top-btn').css({'opacity':'0.5','z-index':'59','cursor':'pointer'})
+						if (($(window).height()+$(window).scrollTop()>=$('.body-section-content').height())||($('.nav1-side-menu').css('right')=='0px'))
+						{
+							$('.top-btn').stop().animate({'bottom':'90px'},200)
+		
+						}else{
+							$('.top-btn').stop().animate({'bottom':'50px'},200)
+						}
+					}
+					if ($('.index-btn-wrap').css('z-index')=='58'){
+		
+						if (($(window).height()+$(window).scrollTop()>=$('.body-section-content').height())||($('.nav1-side-menu').css('right')=='0px'))//현재 window와 현재의 scroll값을 더한 값이 보여지는 document 이상일 경우(현재 scroll 위치) -> top 기준이기 때문에 탑메뉴의 height가 늘어나면 연산을 다시해서 재실행 되는 문제가 있음.
+						{
+							$('.index-btn-wrap').stop().animate({'bottom':'144px'},150)
+						}else{
+							$('.index-btn-wrap').stop().animate({'bottom':'104px'},150)
+						}
+					}else{
+						/*
+						var bwheight = scrollindex*24;
+						$('.index-btn-wrap').css({'z-index':'58','opacity':'0.5','height':bwheight+'px'})//.index-btn-wrap의 높이 자동계산.
+						for (var scrmenu = 1 ; scrmenu<=scrollindex ; scrmenu++)
+						{
+							$('.index-btn-wrap').append('<a><div class="index-btn-all" id="index-btn-num'+scrmenu+'">'+scrmenu+'</div></a>')
+						}
+						*/
+						$('.index-btn-wrap').css({'z-index':'58','opacity':'0.5'})
+		
+						if (($(window).height()+$(window).scrollTop()>=$('.body-section-content').height())||($('.nav1-side-menu').css('right')=='0px'))
+						{
+							$('.index-btn-wrap').stop().animate({'bottom':'144px'},150)
+						}else{
+							$('.index-btn-wrap').stop().animate({'bottom':'104px'},150)
+						}
+					}
+		
+					$('.top-btn').click(function(){
+						var topbtnm
+						if ($('.body-all-header').css('height')=='50px')
+						{
+							topbtnm = 50;
+						}else if ($('.body-all-header').css('height')=='100px')
+						{
+							topbtnm = 100;
+						}else if ($('.body-all-header').css('height')=='150px')
+						{
+							topbtnm = 150;
+						}
+						$('body, html').stop().animate({ scrollTop: $("body").offset().top-topbtnm },400);
+						$('.index-btn-all').css({'background':'rgba(0,0,0,1)','border':'1px solid #fff'})
+						$('#scrollall-back-acc1').stop().animate({'top':'270px'},100)
+						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
+					})
+					if ($(window).scrollTop()==0){
+						$('#scrollall-back-acc1').stop().animate({'top':'270px'},100)
+						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
+					}
+					if ($(window).scrollTop()>70)
+					{
+						$('#scrollall-back-acc1').stop().animate({'top':'170px'},100)
+						$('#scrollall-back-acc2').stop().animate({'top':'220px'},100)
+					}else{
+						$('#scrollall-back-acc1').stop().animate({'top':'270px'},100)
+						$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
+					}
+		
+				}else{
+					$('#section1-article1-nav1').css({'background':'rgba(255,255,255,1)'})
+					$('.nav1-topmenu1-list a').css({'color':'#333'})
+					$('.top-btn').css({'opacity':'0','z-index':'-1','cursor':'initial'})
+					$('.index-btn-wrap').css({'z-index':'-2','opacity':'0'})
+					//$('.index-btn-all').remove('')
+					$('#section1-article1-nav1').mouseover(function(){
+						$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
+						$('.nav1-topmenu1-list a').css({'color':'#333'})
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
+					})
+					$('#section1-article1-nav1').mouseleave(function(){
+						$('#section1-article1-nav1').stop().css({'background':'rgba(255,255,255,1)'})
+						$('.nav1-topmenu1-list a').css({'color':'#333'})
+						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
+						$('#phon-icon').css('background-position','-80px 0px')
+		
+					})
+					$('#phon-icon').css('background-position','-80px 0px')
+				}
+				var scpar
+				if ((location.href=='https://cl0cktree.github.io/portfolioindex/index.html')||(location.href=='https://cl0cktree.github.io/portfolioindex/')||(location.href=='https://cl0cktree.github.io/portfolioindex'))
+				{
+					scpar = 500;
+				}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub1.html')
+				{
+					scpar = 350;
+				}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub2.html')
+				{
+					scpar = 350;
+				}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub3.html')
+				{
+					scpar = 50;
+				}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub4.html')
+				{
+					scpar = 0;
+				}else if (location.href=='https://cl0cktree.github.io/portfolioindex/sub/sub5.html')
+				{
+					scpar = 200;
+				}
+		
+				var mw1 = $('.move-wrap1').height();
+				var mw2 = $('.move-wrap2').height();
+				var mw3 = $('.move-wrap3').height();
+		
+				if ($(window).scrollTop()>50)
+				{
+					$('.move-wrap1').animate({'opacity':'1'},400)
+					if ($(window).scrollTop()>mw1)
+					{
+						$('.move-wrap2').animate({'left':'0','opacity':'1'},400)
+						if ($(window).scrollTop()>mw1+mw2)
+						{
+							$('.move-wrap3').animate({'left':'0','opacity':'1'},400)
+							if ($(window).scrollTop()>mw1+mw2+mw3)
+							{
+								$('.move-wrap4').animate({'left':'0','opacity':'1'},400)
+							}
+						}
 					}
 				}
-			}
-		}
+
+			},scroll_framespeed);
+		};
 	})
 
 	$('.body-section-content').on('click','.index-btn-all',function(){
