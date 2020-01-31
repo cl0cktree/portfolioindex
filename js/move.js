@@ -2402,12 +2402,7 @@ $(function(){
 				};
 			}
 			function startbar(){
-				var slide_wrap = function(){
-					$('#slide-wrap').width()-120;
-					$(window).resize(function(){
-						$('#slide-wrap').width()-120;
-					});
-				};
+				var slide_wrap = s_width-120;
 				setTimeout(lazy_0,0);
 				if($('#slide-wrap').find('.controll').length<1){
 					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
