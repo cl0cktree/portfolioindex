@@ -40,9 +40,6 @@ $(function(){
 	$('body').ready(function(){
 		$('.body-section-all').load(portfolioindex_url+'/cover/cover.html .section-num1-article',function(){
 			/*ie9에서 탑메뉴 이동 후 동작*/
-
-
-
 			for (scib1=1;scib1<=scall1 ;scib1++ )
 			{
 				var ibheight1 = $('#con-box1-imgborder'+scib1+'img').height();
@@ -2423,20 +2420,26 @@ $(function(){
 			function startbar(){
 				setTimeout(lazy_0,0);
 				if($('#slide-wrap').find('.controll').length<1){
-					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;bottom:0px;left:0;width:0;height:20px;background:rgba(0,0,0,0.7);z-index:1"></span>')
+					var bar_height;
+					if($('body').css('width')>640){
+						bar_height = 2;
+					}else{
+						bar_height = 1;
+					}
+					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:'+bar_height+'px;background:rgba(0,0,0,0.7);z-index:1"></span>')
 					$('.timebar').stop().animate({'width':'100%'},barspeed);
 					bar_on = setInterval(function(){
 							$('.timebar').remove();
-							$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;bottom:0px;left:0;width:0;height:20px;background:rgba(0,0,0,0.7);z-index:1"></span>')
+							$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;bottom:0px;left:0;width:0;height:'+bar_height+'px;background:rgba(0,0,0,0.7);z-index:1"></span>')
 							$('.timebar').stop().animate({'width':'100%'},barspeed);
 					},autospeed);
 				}else{
 					if($('.controll input[type=checkbox]').prop('checked')==false){
-						$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;bottom:0px;left:0;width:0;height:20px;background:rgba(0,0,0,0.7);z-index:1"></span>')
+						$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;bottom:0px;left:0;width:0;height:'+bar_height+'px;background:rgba(0,0,0,0.7);z-index:1"></span>')
 						$('.timebar').stop().animate({'width':'100%'},barspeed);
 						bar_on = setInterval(function(){
 								$('.timebar').remove();
-								$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;bottom:0px;left:0;width:0;height:20px;background:rgba(0,0,0,0.7);z-index:1"></span>')
+								$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;bottom:0px;left:0;width:0;height:'+bar_height+'px;background:rgba(0,0,0,0.7);z-index:1"></span>')
 								$('.timebar').stop().animate({'width':'100%'},barspeed);
 						},autospeed);
 					}
@@ -2444,7 +2447,7 @@ $(function(){
 			};
 			function page(){
 				if($('#slide-wrap').find('.pagecount').length<1){
-					$('#slide-wrap').append('<div class="pagecount" style="position:absolute;right:0;right:0;width:60px;height:30px;line-height:30px;background:rgba(0,0,0,0.7);color:#fff;font-size:14px;z-index:4;"><span style="display:block;width:100%;text-align:center;">'+sort_index+' / '+slideNum+'</span></div>')
+					$('#slide-wrap').append('<div class="pagecount" style="position:absolute;bottom:0;right:0;width:60px;height:30px;line-height:30px;background:rgba(0,0,0,0.7);color:#fff;font-size:14px;z-index:4;"><span style="display:block;width:100%;text-align:center;">'+sort_index+' / '+slideNum+'</span></div>')
 				}
 				else{
 					$('.pagecount').children('span').text(sort_index+' / '+slideNum);
@@ -2464,7 +2467,7 @@ $(function(){
 					controll_right=0;
 				}
 				if($('#slide-wrap').find('.controll').length<1){
-					$('#slide-wrap').append('<div class="controll" style="position:absolute;right:0;right:'+controll_right+'px;width:60px;height:30px;line-height:30px;background:rgba(0,0,0,0.7);color:#fff;font-size:14px;z-index:4;">\
+					$('#slide-wrap').append('<div class="controll" style="position:absolute;bottom:0;right:'+controll_right+'px;width:60px;height:30px;line-height:30px;background:rgba(0,0,0,0.7);color:#fff;font-size:14px;z-index:4;">\
 					<input type="checkbox" id="controll_btn" name="controll_btn"><label for="controll_btn"><span class="btn_word" style="display:block;width:100%;text-align:center;cursor:pointer;">Stop</span></label></div>')
 				}
 				$('.controll input[type=checkbox]').click(function(){
