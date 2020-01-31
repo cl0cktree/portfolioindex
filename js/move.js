@@ -2405,27 +2405,27 @@ $(function(){
 				setTimeout(lazy_0,0);
 				if($('#slide-wrap').find('.controll').length<1){
 					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
-					$('.timebar').stop().animate({'width':'(calc = 100% - 120px)'},barspeed);
+					$('.timebar').stop().animate({'width':'(calc = 100%-120px)'},barspeed);
 					bar_on = setInterval(function(){
 							$('.timebar').remove();
 							$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
-							$('.timebar').stop().animate({'width':'(calc = 100% - 120px)'},barspeed);
+							$('.timebar').stop().animate({'width':'(calc = 100%-120px)'},barspeed);
 					},autospeed);
 				}else{
 					if($('.controll input[type=checkbox]').prop('checked')==false){
 						$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
-						$('.timebar').stop().animate({'width':'(calc = 100% - 120px)'},barspeed);
+						$('.timebar').stop().animate({'width':'(calc = 100%-120px)'},barspeed);
 						bar_on = setInterval(function(){
 								$('.timebar').remove();
 								$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
-								$('.timebar').stop().animate({'width':'(calc = 100% - 120px)'},barspeed);
+								$('.timebar').stop().animate({'width':'(calc = 100%-120px)'},barspeed);
 						},autospeed);
 					}
 				}
 			};
 			function page(){
 				if($('#slide-wrap').find('.pagecount').length<1){
-					$('#slide-wrap').append('<div class="pagecount" style="position:absolute;bottom:0;right:0;width:60px;height:30px;line-height:30px;background:rgba(0,0,0,0.7);color:#fff;font-size:14px;z-index:3;"><span style="display:block;width:100%;text-align:center;">'+sort_index+' / '+slideNum+'</span></div>')
+					$('#slide-wrap').append('<div class="pagecount" style="position:absolute;top:0;right:0;width:60px;height:30px;line-height:30px;background:rgba(0,0,0,0.7);color:#fff;font-size:14px;z-index:3;"><span style="display:block;width:100%;text-align:center;">'+sort_index+' / '+slideNum+'</span></div>')
 				}
 				else{
 					$('.pagecount').children('span').text(sort_index+' / '+slideNum);
