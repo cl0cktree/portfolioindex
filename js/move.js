@@ -1936,7 +1936,6 @@ $(function(){
 	/*-----------------------------------------------------------*/
 
 	/*index mainslide 부분*/
-	
 	if($('body').find('#slide-wrap'))
 		{
 		$('#slide-wrap').append('<div id="slide-container" class="slide-container"></div><ul id="indicator" class="indicator"></ul><div id="prev-btn" class="con-btn"></div><div id="next-btn" class="con-btn"></div>');
@@ -1955,8 +1954,8 @@ $(function(){
 				slideNum++;
 				$('.slide-container').append('<div class="slide" id="slide'+slideNum+'" data-index="'+slideNum+'"><img src='+item.img_url+' alt="'+item.alt_text+slideNum+'"></div>');
 				$('.indicator').append('<li id="bulet'+slideNum+'" class="bulet" data-index="'+slideNum+'">●</li>');
-				$('.bulet').css({'color':'#ccc'});
-				$('#bulet1').css({'color':'#999'});
+				$('.bulet').css({'color':'#999'});
+				$('#bulet1').css({'color':'#000'});
 				mswidth = $('.slide').each(Array).length;/*슬라이드 전체 배열의 갯수만큼의 숫자를 추출*/
 				for (var i=0;i<mswidth;i++)/*.slide의 배열이 늘어나면 알아서 아이디와 레프트값 연산 및 .indicator의 btn도 배열 갯수만큼 append*/
 				{
@@ -2020,8 +2019,8 @@ $(function(){
 					sort_index++;
 					move=(sort_index-1)*-100;
 					$('.slide-container').stop().animate({'left':move+'%','transition-timing-function':'linear'},movespeed);
-					$('.bulet').css({'color':'#ccc'});
-					$('#bulet'+sort_index).css({'color':'#999'});
+					$('.bulet').css({'color':'#999'});
+					$('#bulet'+sort_index).css({'color':'#000'});
 					if(sort_index==mswidth){
 						$('#prev-btn').css({'z-index':'4','opacity':'1'});
 						$('#next-btn').css({'z-index':'-1','opacity':'0'});
@@ -2046,8 +2045,8 @@ $(function(){
 						$('#next-btn').css({'z-index':'4','opacity':'1'});
 					}
 					$('.slide-container').stop().animate({'left':move+'%','transition-timing-function':'linear'},movespeed);
-					$('.bulet').css({'color':'#ccc'});
-					$('#bulet'+sort_index).css({'color':'#999'});
+					$('.bulet').css({'color':'#999'});
+					$('#bulet'+sort_index).css({'color':'#000'});
 				}
 				page();
 				// inner_controll_s();
@@ -2070,8 +2069,8 @@ $(function(){
 						$('#next-btn').css({'z-index':'4','opacity':'1'});
 					}
 					$('.slide-container').stop().animate({'left':move+'%','transition-timing-function':'linear'},movespeed);
-					$('.bulet').css({'color':'#ccc'});
-					$('#bulet'+sort_index).css({'color':'#999'});
+					$('.bulet').css({'color':'#999'});
+					$('#bulet'+sort_index).css({'color':'#000'});
 				}else{
 					sort_index=mswidth;
 					move=(sort_index-1)*-100;
@@ -2086,8 +2085,8 @@ $(function(){
 						$('#next-btn').css({'z-index':'4','opacity':'1'});
 					}
 					$('.slide-container').stop().animate({'left':move+'%','transition-timing-function':'linear'},movespeed);
-					$('.bulet').css({'color':'#ccc'});
-					$('#bulet'+sort_index).css({'color':'#999'});
+					$('.bulet').css({'color':'#999'});
+					$('#bulet'+sort_index).css({'color':'#000'});
 				}
 				page();
 				// inner_controll_s();
@@ -2370,8 +2369,8 @@ $(function(){
 							$('#prev-btn').css({'z-index':'4','opacity':'1'});
 							$('#next-btn').css({'z-index':'4','opacity':'1'});
 						}
-						$('.bulet').css({'color':'#ccc'});
-						$('#bulet'+sort_index).css({'color':'#999'});
+						$('.bulet').css({'color':'#999'});
+						$('#bulet'+sort_index).css({'color':'#000'});
 						$('.slide-container').stop().animate({'left':move+'%'},movespeed);
 						page();
 						// inner_controll_s();
@@ -2404,20 +2403,20 @@ $(function(){
 			function startbar(){
 				setTimeout(lazy_0,0);
 				if($('#slide-wrap').find('.controll').length<1){
-					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,0.5);z-index:-1"></span>')
+					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,1);z-index:-1"></span>')
 					$('.timebar').stop().animate({'width':'100%'},barspeed);
 					bar_on = setInterval(function(){
 							$('.timebar').remove();
-							$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,0.5);z-index:-1"></span>')
+							$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,1);z-index:-1"></span>')
 							$('.timebar').stop().animate({'width':'100%'},barspeed);
 					},autospeed);
 				}else{
 					if($('.controll input[type=checkbox]').prop('checked')==false){
-						$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,0.5);z-index:-1"></span>')
+						$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,1);z-index:-1"></span>')
 						$('.timebar').stop().animate({'width':'100%'},barspeed);
 						bar_on = setInterval(function(){
 								$('.timebar').remove();
-								$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,0.5);z-index:-1"></span>')
+								$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,1);z-index:-1"></span>')
 								$('.timebar').stop().animate({'width':'100%'},barspeed);
 						},autospeed);
 					}
