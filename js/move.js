@@ -2400,24 +2400,24 @@ $(function(){
 						}
 					);
 				};
-			}
+			};
 			function startbar(){
 				setTimeout(lazy_0,0);
 				if($('#slide-wrap').find('.controll').length<1){
-					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:'+msheight+';background:rgba(0,0,0,0.7);z-index:1"></span>')
+					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,0.7);z-index:1"></span>')
 					$('.timebar').stop().animate({'width':'100%'},barspeed);
 					bar_on = setInterval(function(){
 							$('.timebar').remove();
-							$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:'+msheight+';background:rgba(0,0,0,0.7);z-index:1"></span>')
+							$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,0.7);z-index:1"></span>')
 							$('.timebar').stop().animate({'width':'100%'},barspeed);
 					},autospeed);
 				}else{
 					if($('.controll input[type=checkbox]').prop('checked')==false){
-						$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:'+msheight+';background:rgba(0,0,0,0.7);z-index:1"></span>')
+						$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,0.7);z-index:1"></span>')
 						$('.timebar').stop().animate({'width':'100%'},barspeed);
 						bar_on = setInterval(function(){
 								$('.timebar').remove();
-								$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:'+msheight+';background:rgba(0,0,0,0.7);z-index:1"></span>')
+								$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0px;width:0;height:100%;background:rgba(0,0,0,0.7);z-index:1"></span>')
 								$('.timebar').stop().animate({'width':'100%'},barspeed);
 						},autospeed);
 					}
