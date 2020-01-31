@@ -1952,7 +1952,7 @@ $(function(){
 		$.getJSON(jsonLocation, function(data){
 			$.each(data, function(I, item){
 				slideNum++;
-				$('.slide-container').append('<div class="slide" id="slide'+slideNum+'" data-index="'+slideNum+'"><img src='+item.img_url+' alt="'+item.alt_text+slideNum+'"></div>');
+				$('.slide-container').append('<div class="slide" id="slide'+slideNum+'" data-index="'+slideNum+'"><img src='+item.img_url+' alt="'+item.alt_text+'"></div>');
 				$('.indicator').append('<li id="bulet'+slideNum+'" class="bulet" data-index="'+slideNum+'">●</li>');
 				$('.bulet').css({'color':'#999'});
 				$('#bulet1').css({'color':'#000'});
