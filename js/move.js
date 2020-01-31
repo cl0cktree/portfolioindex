@@ -2012,7 +2012,7 @@ $(function(){
 			controll();
 			if(sort_index==1){
 				$('#prev-btn').css({'z-index':'-1','opacity':'0'});
-				$('#next-btn').css({'z-index':'2','opacity':'1'});
+				$('#next-btn').css({'z-index':'4','opacity':'1'});
 			}
 			function nextBtn(){
 				// console.log('app_sort = '+app_sort);
@@ -2023,27 +2023,27 @@ $(function(){
 					$('.bulet').css({'color':'#ccc'});
 					$('#bulet'+sort_index).css({'color':'#999'});
 					if(sort_index==mswidth){
-						$('#prev-btn').css({'z-index':'2','opacity':'1'});
+						$('#prev-btn').css({'z-index':'4','opacity':'1'});
 						$('#next-btn').css({'z-index':'-1','opacity':'0'});
 					}else if(sort_index==1){
 						$('#prev-btn').css({'z-index':'-1','opacity':'0'});
-						$('#next-btn').css({'z-index':'2','opacity':'1'});
+						$('#next-btn').css({'z-index':'4','opacity':'1'});
 					}else{
-						$('#prev-btn').css({'z-index':'2','opacity':'1'});
-						$('#next-btn').css({'z-index':'2','opacity':'1'});
+						$('#prev-btn').css({'z-index':'4','opacity':'1'});
+						$('#next-btn').css({'z-index':'4','opacity':'1'});
 					}
 				}else{
 					sort_index=1;
 					move=(sort_index-1)*-100;
 					if(sort_index==mswidth){
-						$('#prev-btn').css({'z-index':'2','opacity':'1'});
+						$('#prev-btn').css({'z-index':'4','opacity':'1'});
 						$('#next-btn').css({'z-index':'-1','opacity':'0'});
 					}else if(sort_index==1){
 						$('#prev-btn').css({'z-index':'-1','opacity':'0'})
-						$('#next-btn').css({'z-index':'2','opacity':'1'})
+						$('#next-btn').css({'z-index':'4','opacity':'1'})
 					}else{
-						$('#prev-btn').css({'z-index':'2','opacity':'1'});
-						$('#next-btn').css({'z-index':'2','opacity':'1'});
+						$('#prev-btn').css({'z-index':'4','opacity':'1'});
+						$('#next-btn').css({'z-index':'4','opacity':'1'});
 					}
 					$('.slide-container').stop().animate({'left':move+'%','transition-timing-function':'linear'},movespeed);
 					$('.bulet').css({'color':'#ccc'});
@@ -2060,14 +2060,14 @@ $(function(){
 					sort_index--;
 					move=(sort_index-1)*-100;
 					if(sort_index==mswidth){
-						$('#prev-btn').css({'z-index':'2','opacity':'1'});
+						$('#prev-btn').css({'z-index':'4','opacity':'1'});
 						$('#next-btn').css({'z-index':'-1','opacity':'0'});
 					}else if(sort_index==1){
 						$('#prev-btn').css({'z-index':'-1','opacity':'0'})
-						$('#next-btn').css({'z-index':'2','opacity':'1'})
+						$('#next-btn').css({'z-index':'4','opacity':'1'})
 					}else{
-						$('#prev-btn').css({'z-index':'2','opacity':'1'});
-						$('#next-btn').css({'z-index':'2','opacity':'1'});
+						$('#prev-btn').css({'z-index':'4','opacity':'1'});
+						$('#next-btn').css({'z-index':'4','opacity':'1'});
 					}
 					$('.slide-container').stop().animate({'left':move+'%','transition-timing-function':'linear'},movespeed);
 					$('.bulet').css({'color':'#ccc'});
@@ -2076,14 +2076,14 @@ $(function(){
 					sort_index=mswidth;
 					move=(sort_index-1)*-100;
 					if(sort_index==mswidth){
-						$('#prev-btn').css({'z-index':'2','opacity':'1'});
+						$('#prev-btn').css({'z-index':'4','opacity':'1'});
 						$('#next-btn').css({'z-index':'-1','opacity':'0'});
 					}else if(sort_index==1){
 						$('#prev-btn').css({'z-index':'-1','opacity':'0'})
-						$('#next-btn').css({'z-index':'2','opacity':'1'})
+						$('#next-btn').css({'z-index':'4','opacity':'1'})
 					}else{
-						$('#prev-btn').css({'z-index':'2','opacity':'1'});
-						$('#next-btn').css({'z-index':'2','opacity':'1'});
+						$('#prev-btn').css({'z-index':'4','opacity':'1'});
+						$('#next-btn').css({'z-index':'4','opacity':'1'});
 					}
 					$('.slide-container').stop().animate({'left':move+'%','transition-timing-function':'linear'},movespeed);
 					$('.bulet').css({'color':'#ccc'});
@@ -2264,23 +2264,7 @@ $(function(){
 						}
 					}else if(tvalue==0){
 						if(yvalue==0){
-							if($(this).is('#slide1')==true){
-								$('body').css({'background':'red'})
-							}else if($(this).is('#slide2')==true){
-								$('body').css({'background':'orange'})
-							}else if($(this).is('#slide3')==true){
-								$('body').css({'background':'yellow'})
-							}else if($(this).is('#slide4')==true){
-								$('body').css({'background':'green'})
-							}else if($(this).is('#slide5')==true){
-								$('body').css({'background':'blue'})
-							}else if($(this).is('#slide6')==true){
-								$('body').css({'background':'purple'})
-							}else if($(this).is('#slide7')==true){
-								$('body').css({'background':'gray'})
-							}else if($(this).is('#slide8')==true){
-								$('body').css({'background':'black'})
-							}
+							click_move();
 						}else{
 							if(yvalue>cal_height){
 								$('body, html').stop().animate({ scrollTop: $("body").offset().top+yvalue },300);
@@ -2377,14 +2361,14 @@ $(function(){
 					sort_index = $(this).data('index');
 						move=(sort_index-1)*-100;
 						if(sort_index==mswidth){
-							$('#prev-btn').css({'z-index':'2','opacity':'1'});
+							$('#prev-btn').css({'z-index':'4','opacity':'1'});
 							$('#next-btn').css({'z-index':'-1','opacity':'0'});
 						}else if(sort_index==1){
 							$('#prev-btn').css({'z-index':'-1','opacity':'0'})
-							$('#next-btn').css({'z-index':'2','opacity':'1'})
+							$('#next-btn').css({'z-index':'4','opacity':'1'})
 						}else{
-							$('#prev-btn').css({'z-index':'2','opacity':'1'});
-							$('#next-btn').css({'z-index':'2','opacity':'1'});
+							$('#prev-btn').css({'z-index':'4','opacity':'1'});
+							$('#next-btn').css({'z-index':'4','opacity':'1'});
 						}
 						$('.bulet').css({'color':'#ccc'});
 						$('#bulet'+sort_index).css({'color':'#999'});
