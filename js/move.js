@@ -2402,23 +2402,24 @@ $(function(){
 				};
 			}
 			function startbar(){
+				var slide_wrap = $('#slide-wrap').width()-120;
 				setTimeout(lazy_0,0);
 				if($('#slide-wrap').find('.controll').length<1){
 					$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
-					$('.timebar').stop().animate({'width':'100%'-120},barspeed);
+					$('.timebar').stop().animate({'width':slide_wrap},barspeed);
 					bar_on = setInterval(function(){
 							$('.timebar').remove();
 							$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
-							$('.timebar').stop().animate({'width':'100%'-120},barspeed);
+							$('.timebar').stop().animate({'width':slide_wrap},barspeed);
 					},autospeed);
 				}else{
 					if($('.controll input[type=checkbox]').prop('checked')==false){
 						$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
-						$('.timebar').stop().animate({'width':'100%'-120},barspeed);
+						$('.timebar').stop().animate({'width':slide_wrap},barspeed);
 						bar_on = setInterval(function(){
 								$('.timebar').remove();
 								$('#slide-wrap').append('<span class="timebar" style="display:inline-block;position:absolute;top:0px;left:0;width:0;height:30px;background:rgba(0,0,0,0.7);z-index:1"></span>')
-								$('.timebar').stop().animate({'width':'100%'-120},barspeed);
+								$('.timebar').stop().animate({'width':slide_wrap},barspeed);
 						},autospeed);
 					}
 				}
