@@ -2424,7 +2424,7 @@ $(function(){
 			};
 			function page(){
 				if($('#slide-wrap').find('.pagecount').length<1){
-					$('#slide-wrap').append('<div class="pagecount" style="position:absolute;top:0;right:0;width:60px;height:30px;line-height:30px;background:rgba(0,0,0,0.7);color:#fff;font-size:14px;z-index:3;"><span style="display:block;width:100%;text-align:center;">'+sort_index+' / '+slideNum+'</span></div>')
+					$('#slide-wrap').append('<div class="pagecount" style="position:absolute;top:0;right:0;width:60px;background:rgba(0,0,0,0.7);color:#fff;z-index:3;"><span style="display:block;width:100%;text-align:center;">'+sort_index+' / '+slideNum+'</span></div>')
 				}
 				else{
 					$('.pagecount').children('span').text(sort_index+' / '+slideNum);
@@ -2444,7 +2444,7 @@ $(function(){
 					controll_right=0;
 				}
 				if($('#slide-wrap').find('.controll').length<1){
-					$('#slide-wrap').append('<div class="controll" style="position:absolute;top:0;right:'+controll_right+'px;width:60px;height:30px;line-height:30px;background:rgba(0,0,0,0.7);color:#fff;font-size:14px;z-index:4;">\
+					$('#slide-wrap').append('<div class="controll" style="position:absolute;top:0;right:'+controll_right+'px;width:60px;background:rgba(0,0,0,0.7);color:#fff;z-index:4;">\
 					<input type="checkbox" id="controll_btn" name="controll_btn"><label for="controll_btn"><span class="btn_word" style="display:block;width:100%;text-align:center;cursor:pointer;">Stop</span></label></div>')
 				}
 				$('.controll input[type=checkbox]').click(function(){
