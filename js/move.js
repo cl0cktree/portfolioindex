@@ -206,7 +206,7 @@ $(function(){
 	})
 	/*----------------------------------------------------------------*/
 	/*header 부분 동작부*/
-	$('.body-all-header').on('mouseover mouseleave',function(event){
+	$('.body-all-header').on('mouseover mouseleave touchstart touchend',function(event){
 		if (event.type=='mouseover')
 		{
 			if ($('#article1-nav1-topmenu1').css('display')=='block')
@@ -228,7 +228,25 @@ $(function(){
 				$('.article1-nav1-toplogo').animate({'height':'100px'},100)
 			}
 		}
-
+		else if(event.type=='touchstart'){
+			if ($('#article1-nav1-topmenu1').css('display')=='block')
+			{
+				$('.body-all-header').stop().animate({'height':'150px'},100)
+				$('.article1-nav1-toplogo').stop().animate({'height':'100px'},100)
+			}else{
+				$('.body-all-header').stop().animate({'height':'100px'},100)
+				$('.article1-nav1-toplogo').stop().animate({'height':'100px'},100)
+			}
+		}else if(event.type=='touchend'){
+			if ($('#article1-nav1-topmenu1').css('display')=='block')
+			{
+				$('.body-all-header').animate({'height':'50px'},100)
+				$('.article1-nav1-toplogo').animate({'height':'0px'},100)
+			}else{
+				$('.body-all-header').animate({'height':'100px'},100)
+				$('.article1-nav1-toplogo').animate({'height':'100px'},100)
+			}
+		}
 	})
 
 
