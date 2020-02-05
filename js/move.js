@@ -2172,7 +2172,7 @@ $(function(){
 
 			$('.slide').on('touchstart touchmove touchend touchcancle click mouseover mouseleave',function(event){
 				cal_width = s_width*0.3;
-				cal_height = msheight*0.2;
+				cal_height = msheight*0.8;
 				var dragmove;
 				var slideNum;
 				var updown;
