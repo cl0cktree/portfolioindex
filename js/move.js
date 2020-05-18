@@ -2485,6 +2485,8 @@ $(function(){
 			};
 			//----------------------------------------------------------------------------------------------
 			function click_move(){
+				stop_s();
+				stop_bar();
 				var topminus = 0;
 				if ($('#article1-nav1-topmenu1').css('display')=='block')
 				{
@@ -2501,6 +2503,8 @@ $(function(){
 				}else if(sort_index==4){
 					$('body, html').stop().animate({ scrollTop: $("#article-main-scroll4").offset().top-topminus },300);
 				}
+				start_s();
+				startbar();
 			};
 			function start_s(){
 				setTimeout(lazy_0,0);
