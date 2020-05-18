@@ -2485,8 +2485,10 @@ $(function(){
 			};
 			//----------------------------------------------------------------------------------------------
 			function click_move(){
-				stop_s();
-				stop_bar();
+				// stop_s();
+				// stop_bar();
+				setTimeout(stop_s,0);
+				setTimeout(stop_bar,0);
 				var topminus = 0;
 				if ($('#article1-nav1-topmenu1').css('display')=='block')
 				{
