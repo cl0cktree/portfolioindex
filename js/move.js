@@ -2356,7 +2356,11 @@ $(function(){
 					// inner_controll_s();
 				}
 				else if(event.type=='click'){
+					stop_s();
+					stop_bar();
 					click_move();
+					start_s();
+					startbar();
 				};
 				return false;
 			});
