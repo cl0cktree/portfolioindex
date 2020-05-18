@@ -2170,7 +2170,7 @@ $(function(){
 				}
 			});
 
-			$('.slide').on('touchstart touchmove touchend touchcancle click mouseover mouseleave',function(event){
+			$('.slide').on('touchstart touchmove touchend touchcancle click mouseover mouseleave dbclick',function(event){
 				cal_width = s_width*0.3;
 				cal_height = msheight*0.5;
 				var dragmove;
@@ -2356,6 +2356,16 @@ $(function(){
 					// inner_controll_s();
 				}
 				else if(event.type=='click'){
+					// stop_s();
+					// stop_bar();
+					event.preventDefault();
+					event.stopPropagation();
+					setTimeout(stop_s,0);
+					setTimeout(stop_bar,0);
+					click_move();
+					start_s();
+					startbar();
+				}else if(event.type=='dbclick'){
 					// stop_s();
 					// stop_bar();
 					event.preventDefault();
