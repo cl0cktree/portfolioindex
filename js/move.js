@@ -2356,8 +2356,10 @@ $(function(){
 					// inner_controll_s();
 				}
 				else if(event.type=='click'){
-					stop_s();
-					stop_bar();
+					// stop_s();
+					// stop_bar();
+					setTimeout(stop_s,0);
+					setTimeout(stop_bar,0);
 					click_move();
 					start_s();
 					startbar();
