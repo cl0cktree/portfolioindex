@@ -2358,6 +2358,8 @@ $(function(){
 				else if(event.type=='click'){
 					// stop_s();
 					// stop_bar();
+					event.preventDefault();
+					event.stopPropagation();
 					setTimeout(stop_s,0);
 					setTimeout(stop_bar,0);
 					click_move();
