@@ -1610,6 +1610,7 @@ $(function(){
 				var mw1 = $('.move-wrap1').height();
 				var mw2 = $('.move-wrap2').height();
 				var mw3 = $('.move-wrap3').height();
+				var mw4 = $('.move-wrap4').height();
 		
 				if ($(window).scrollTop()>50)
 				{
@@ -1623,6 +1624,10 @@ $(function(){
 							if ($(window).scrollTop()>mw1+mw2+mw3)
 							{
 								$('.move-wrap4').animate({'left':'0','opacity':'1'},400)
+								if ($(window).scrollTop()>mw1+mw2+mw3+mw4)
+								{
+									$('.move-wrap5').animate({'left':'0','opacity':'1'},400)
+								}
 							}
 						}
 					}
@@ -1841,6 +1846,21 @@ $(function(){
 			}else if ((this==document.getElementById('con-box4-imgborder2'))||(this==document.getElementById('con-box4-caption2')))
 			{
 				datasum = portfolioindex_url+'/data/data.html #filter-conbox-contents24';
+			}else if ((this==document.getElementById('con-box5-imgborder1'))||(this==document.getElementById('con-box5-caption1')))
+			{
+				datasum = portfolioindex_url+'/data/data.html #filter-conbox-contents25';
+			}else if ((this==document.getElementById('con-box5-imgborder2'))||(this==document.getElementById('con-box5-caption2')))
+			{
+				datasum = portfolioindex_url+'/data/data.html #filter-conbox-contents26';
+			}else if ((this==document.getElementById('con-box5-imgborder3'))||(this==document.getElementById('con-box5-caption3')))
+			{
+				datasum = portfolioindex_url+'/data/data.html #filter-conbox-contents27';
+			}else if ((this==document.getElementById('con-box5-imgborder4'))||(this==document.getElementById('con-box5-caption4')))
+			{
+				datasum = portfolioindex_url+'/data/data.html #filter-conbox-contents28';
+			}else if ((this==document.getElementById('con-box5-imgborder5'))||(this==document.getElementById('con-box5-caption5')))
+			{
+				datasum = portfolioindex_url+'/data/data.html #filter-conbox-contents29';
 			}
 
 			else{
@@ -1956,7 +1976,7 @@ $(function(){
 		var sort_index;
 		var app_sort;
 		var slideNum=0;
-		var jsonLocation = './data/data.json';
+		var jsonLocation = portfolioindex_url+'/data/data.json';
 		var sort_slide;
 		$.getJSON(jsonLocation, function(data){
 			$.each(data, function(I, item){
@@ -2516,6 +2536,8 @@ $(function(){
 					$('body, html').stop().animate({ scrollTop: $("#article-main-scroll3").offset().top-topminus },300);
 				}else if(sort_index==4){
 					$('body, html').stop().animate({ scrollTop: $("#article-main-scroll4").offset().top-topminus },300);
+				}else if(sort_index==5){
+					$('body, html').stop().animate({ scrollTop: $("#article-main-scroll5").offset().top-topminus },300);
 				}
 			};
 			function start_s(){
