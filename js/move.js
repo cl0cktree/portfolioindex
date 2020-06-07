@@ -1982,9 +1982,9 @@ $(function(){
 		region = data.region // 접속자 지역
 		country = data.country // 접속자 국가
 		loc = data.loc // 접속 위도, 경도
-		org = data.org // ISP (인터넷 서비스 제공사업자)	
+		org = data.org // ISP (인터넷 서비스 제공사업자)
+		console.log(city);
 	});
-	console.log(city);
 
 	/*-----------------------------------------------------------*/
 
