@@ -1957,11 +1957,16 @@ $(function(){
 				var nowC=today+' -'+apmt+' '+hour0+' : '+min0+' : '+second0;
 				$('.landing-contents-clock').html(nowC);
 			},1000)
-		}),999}
+		}),999};
 	clock();
 	function stop_clock(){
 		clearInterval(scounout);
 	};
+	navigator.geolocation.getCurrentPosition(function(pos) {
+		var latitude = pos.coords.latitude;
+		var longitude = pos.coords.longitude;
+		console.log("현재 위치는 : " + latitude + ", "+ longitude);
+	});
 	/*-----------------------------------------------------------*/
 
 	/*index mainslide 부분*/
