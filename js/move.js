@@ -1975,7 +1975,7 @@ $(function(){
 	var loc = "";
 	var org = "";
 	
-	$.getJSON("http://ipinfo.io", function(data) {
+	$.getJSON("https://ipinfo.io", function(data) {
 		ip = data.ip // 접속자 ip
 		hostname = data.hostname // 접속자 hostname
 		city = data.city // 접속자 도시
