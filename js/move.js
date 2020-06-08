@@ -1983,7 +1983,7 @@ $(function(){
 		country = data.country // 접속자 국가
 		loc = data.loc // 접속 위도, 경도
 		org = data.org // ISP (인터넷 서비스 제공사업자)
-		$('.filter-landing-contents').append('<div class="cover-city">'+city+'</div>');
+		$('.filter-landing-contents').append('<div class="cover-city">Your in '+city+'</div>');
 	});
 
 	/*-----------------------------------------------------------*/
