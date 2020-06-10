@@ -2001,7 +2001,7 @@ $(function(){
 				var place = json.name;
 				var weather_this = json.weather[0].main;
 				// console.log(weather_this);
-				$('.filter-landing-contents').append('<div class="cover-city">'+place+' : '+tempt+'º '+weather_this+'</div>');
+				$('.filter-landing-contents').append('<div class="cover-city">'+place+' : '+tempt+'℃ '+weather_this+'</div>');
 				// $weather.find('.cover-city').append('<br/>현재 위치는  ' + location_lat + ', '+ location_lon+' '+place+' 입니다.'+' 온도는 '+tempt+'º'+' / 날씨는 '+weather_this);
 		  });
 		};
