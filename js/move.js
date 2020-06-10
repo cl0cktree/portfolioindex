@@ -1962,6 +1962,7 @@ $(function(){
 	function stop_clock(){
 		clearInterval(scounout);
 	};
+	/*----날씨 및 도시 표시----*/
 	// navigator.geolocation.getCurrentPosition(function(pos) {
 	// 	var latitude = pos.coords.latitude;
 	// 	var longitude = pos.coords.longitude;
@@ -2000,14 +2001,12 @@ $(function(){
 				var tempt = json.main.temp;
 				var place = json.name;
 				var weather_this = json.weather[0].main;
-				// console.log(weather_this);
 				$('.filter-landing-contents').append('<div class="cover-city">'+place+' : '+tempt+'℃ '+weather_this+'</div>');
-				// $weather.find('.cover-city').append('<br/>현재 위치는  ' + location_lat + ', '+ location_lon+' '+place+' 입니다.'+' 온도는 '+tempt+'º'+' / 날씨는 '+weather_this);
-		  });
+		    });
 		};
 		weather_json();
 	});
-
+	/*--------------------*/
 	/*-----------------------------------------------------------*/
 
 	/*index mainslide 부분*/
