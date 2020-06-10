@@ -1967,6 +1967,9 @@ $(function(){
 	// 	var longitude = pos.coords.longitude;
 	// 	console.log("현재 위치는 : " + latitude + ", "+ longitude);
 	// });
+	var location_split;
+    var location_lat;
+    var location_lon;
 	var ip = "";
 	var hostname = "";
 	var city = "";
@@ -1983,7 +1986,26 @@ $(function(){
 		country = data.country // 접속자 국가
 		loc = data.loc // 접속 위도, 경도
 		org = data.org // ISP (인터넷 서비스 제공사업자)
-		$('.filter-landing-contents').append('<div class="cover-city">Are you in '+city+'?</div>');
+		location_split = loc.split(',');
+        location_lat = location_split[0];
+		location_lon = location_split[1];
+		
+		var weather_key = 'f195f622a07f18107e2cac3417855541';
+        var weather_api = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&APPID='+weather_key;
+        var weather_fet = fetch('https://api.openweathermap.org/data/2.5/weather?lat='+location_lat+'&lon='+location_lon+'&APPID='+weather_key+'&units=metric');
+		function weather_json(){
+			weather_fet.then(function(response){
+				return response.json();
+			}).then(function(json){
+				var tempt = json.main.temp;
+				var place = json.name;
+				var weather_this = json.weather[0].main;
+				// console.log(weather_this);
+				$('.filter-landing-contents').append('<div class="cover-city">'+place+' : '+tempt+'º '+weather_this+'</div>');
+				// $weather.find('.cover-city').append('<br/>현재 위치는  ' + location_lat + ', '+ location_lon+' '+place+' 입니다.'+' 온도는 '+tempt+'º'+' / 날씨는 '+weather_this);
+		  });
+		};
+		weather_json();
 	});
 
 	/*-----------------------------------------------------------*/
