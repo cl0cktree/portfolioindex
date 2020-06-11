@@ -2001,7 +2001,9 @@ $(function(){
 				var tempt = json.main.temp;
 				var place = json.name;
 				var weather_this = json.weather[0].main;
-				$('.filter-landing-contents').append('<div class="cover-city">'+place+' : '+tempt+'℃ / '+weather_this+'</div>');
+				if((location_lat!==''||location_lat!==null)&&(place!==''||place!==null)){
+					$('.filter-landing-contents').append('<div class="cover-city">'+place+' : '+tempt+'℃ / '+weather_this+'</div>');
+				};
 		    });
 		};
 		weather_json();
