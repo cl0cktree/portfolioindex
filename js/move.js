@@ -28,7 +28,27 @@ $(function(){
 	});
 
 	/*-----------*/
-
+	/*각 페이지 링크를 load 시킬 때 각 페이지에 맞는 title 을 지정하기 위한 함수*/
+	function title_changer(){
+		var split_url = this.location.href.split('/').reverse()[0];
+		var title_text;
+		if (split_url=='index.html'){
+			title_text = 'main';
+		}else if (split_url=='sub1.html'){
+			title_text = 'introduce';
+		}else if (split_url=='sub2.html'){
+			title_text = 'web&app';
+		}else if (split_url=='sub3.html'){
+			title_text = 'movie';
+		}else if (split_url=='sub4.html'){
+			title_text = 'flash';
+		}else if (split_url=='sub5.html'){
+			title_text = '2D&Editing';
+		}
+		console.log(split_url);
+		document.title = 'Welcome to Portfolio Site - '+title_text;
+	}
+	/*---------------------------------------------------------------------*/
 	/*커버소환*/
 	var scall1 = $('#main-scroll1-con').children('.scrollall-con-box').each(Array).length;
 	var scall2 = $('#main-scroll2-con').children('.scrollall-con-box').each(Array).length;
@@ -287,7 +307,8 @@ $(function(){
 				$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 				$('.body-filter-preloader').hide();
-				history.pushState(null,null,portfolioindex_url+'/index.html')
+				history.pushState(null,null,portfolioindex_url+'/index.html');
+				title_changer();
 
 			}else{
 				location.href=portfolioindex_url+'/index.html'
@@ -322,8 +343,8 @@ $(function(){
 			$('#scrollall-back-acc2').stop().animate({'top':'170px'},100)
 
 			$('.body-filter-preloader').hide();
-			history.pushState(null,null,portfolioindex_url+'/index.html')
-
+			history.pushState(null,null,portfolioindex_url+'/index.html');
+			title_changer();
 		}
 
 	})
@@ -788,6 +809,7 @@ $(function(){
 				}
 
 			}
+			title_changer();
 		}
 	})
 	/*--------------------------------------------------------*/
