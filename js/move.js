@@ -9,7 +9,6 @@ $(function(){
 			$('.body-filter-preloader').hide();
 			var msheight = $('.slide img').height();
 			$('#slide-wrap').css({'height':msheight});
-
 			var agent = navigator.userAgent.toLowerCase();
 			if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) || (agent.search( "edge/")>-1) || (agent.indexOf("safari") >-1))
 			{
