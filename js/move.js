@@ -680,14 +680,14 @@ $(function(){
 					$('#section1-article1-nav1').css({'background':'rgba(0,0,0,0.5)'})
 					$('.nav1-topmenu1-list a').css({'color':'#fff'})
 					$('#phon-icon').css('background-position','-80px -40px')
-					$('#menu-icon').find('label').before().addClass('color-brown')
+					$('#menu-icon').find('label').before().css({'background':'#4E3B29','border':'#fff'})
 		
 					$('#section1-article1-nav1').mouseover(function(){
 						$('#section1-article1-nav1').stop().css({'background':'#fff'})
 						$('.nav1-topmenu1-list a').css({'color':'#333'})
 						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
 						$('#phon-icon').css('background-position','-80px 0px')
-						$('#menu-icon').find('label').before().removeClass('color-brown')
+						$('#menu-icon').find('label').before().css({'background':'#fff','border':'#4E3B29'})
 		
 					})
 					$('#section1-article1-nav1').mouseleave(function(){
@@ -695,7 +695,7 @@ $(function(){
 						$('.nav1-topmenu1-list a').css({'color':'#fff'})
 						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #fff')
 						$('#phon-icon').css('background-position','-80px -40px')
-						$('#menu-icon').find('label').before().addClass('color-brown')
+						$('#menu-icon').find('label').before().css({'background':'#4E3B29','border':'#fff'})
 					})
 		
 					/*
@@ -837,11 +837,11 @@ $(function(){
 						$('.nav1-topmenu1-list a').css({'color':'#333'})
 						$('.list-span-leftborder,.list-span-rightborder').css('border-bottom','3px solid #4e3b29')
 						$('#phon-icon').css('background-position','-80px 0px')
-						$('#menu-icon').find('label').before().removeClass('color-brown')
+						$('#menu-icon').find('label').before().css({'background':'#fff','border':'#4E3B29'})
 		
 					})
 					$('#phon-icon').css('background-position','-80px 0px')
-					$('#menu-icon').find('label').before().removeClass('color-brown')
+					$('#menu-icon').find('label').before().css({'background':'#fff','border':'#4E3B29'})
 				}
 				var scpar
 				if ((location.href==portfolioindex_url+'/index.html')||(location.href==portfolioindex_url+'/')||(location.href==portfolioindex_url+''))
